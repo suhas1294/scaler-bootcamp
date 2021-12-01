@@ -1,0 +1,186 @@
+Pseudo codes
+
+#1) Simple Interest
+
+Read P, T, R
+result = ptr/100
+print s
+exit
+
+________________________________
+
+#2) check if a number is prime or not
+
+read N
+i = 2;
+while i < = n-1 {
+    if N % i == 0 {
+        print "not prime"
+        exit
+    }
+    i += 1
+}
+print "prime"
+exit
+
+optimzation for while loop: while i < = sqrt(N)
+________________________________
+Pattern problems
+________________________________
+
+1
+2 3
+4 5 6
+7 8 9 10
+
+observations: 
+- N rows
+- each row number of columns  = row no
+- value is incremented by 1
+
+read N
+row = 1
+val = 1
+while row <= N {
+
+    col = 1
+    while col <= row {
+        print(val)
+        val = val + 1
+        col = col + 1
+    }
+
+    print ("\n")
+    row = row + 1
+}
+________________________________
+
+    1
+   232
+  34543
+ 4567654
+567898765
+
+observations:
+consider i as iteration number in loop
+- every row starts with value equal to row number
+- we have N number of rows where N is input
+- every row is a palindrome
+- every row has (n-i) spaces, i numbers in increasing order and (i-1) numbers in decreasing order
+
+AP formula : a + (i-1)d
+
+read N
+i = 1
+while i <= N {
+
+    // print n-i spaces
+    cnt = 1
+    while cnt <= n-i{
+        print(" ")
+        cnt++
+    }
+    
+    // increasing numbers
+    cnt = 1
+    val = i
+    while cnt <= i {
+        print (val)
+        val ++
+        cnt ++
+    }
+
+    // decreasing order
+    cnt = 1
+    val = val-2 (OR) val = 2i-2
+    while cnt <= i {
+        print (val)
+        val = val-1
+        cnt ++
+    }
+
+    print("\n")
+    i++
+
+}
+
+________________________________
+
+Half diamond problem (live assignment)
+n = 3,
+
+  *
+ ***
+*****
+
+observations:
+
+  *     i = 1 ; spaces = 2; stars = 1
+ ***    i = 2 ; spaces = 1; stars = 3
+*****   i = 3 ; spaces = 0; stars = 5
+                n-i spaces ; 2i-1 stars (apply AP formula)
+
+read N
+i = 1; 
+while i <= N {
+    // spaces
+    spaces = 1
+    while spaces <= n-i{
+        print(" ")
+        spaces++
+    }
+
+    // stars
+    stars = 1
+    while stars <= 2i-1 {
+        print("*")
+        stars++
+    }
+
+    // next row
+    print("\n")
+    i++
+}
+________________________________
+
+sum of digits of a number
+ex: N = 2468, result = 2 + 4 + 6 + 8
+Hint: use % 10 to get reminder and divide by 10 to reduce number.
+
+read N
+sum = 0
+while n!= 0{
+    rem = n % 10
+    sum +=  rem
+    n = n/10
+}
+print(sum)
+________________________________
+
+Assignment: 
+1) full diamond problem
+For n=5, there would be 9 stars in the middle row.
+
+
+  *
+ ***
+***** 
+ ***
+  *
+
+2) swap two numbers
+
+3) Given a number N, print reverse of that number 
+N = 2354, output: 4532
+
+4) write Pseudo code for finding gcd of a number
+
+5) write Pseudo code for print all primes in the range a to b where a and b are inputs.
+ex: input : a:10, b:20, output : 11, 13, 17, 19
+
+6) take input  N numbers and find their GCD
+N = 15, 30, 60, 105 
+GCD: 15
+
+Note: Formula for LCM = (product of numbers / gcd of those two numbers)
+________________________________
