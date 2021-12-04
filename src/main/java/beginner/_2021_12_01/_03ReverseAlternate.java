@@ -13,7 +13,7 @@ public class _03ReverseAlternate {
             ans = ans * 10 + lastDigit;
         }
         System.out.println(ans);
-        // will not work as expected if input has leading zeros, ex: 1240
+        // will not work as expected if input has leading zeros, ex: 1240, output : 0421, expected: 421 as leading zeros
         // beware :
         // Reverse the number is different from print the number in reverse order
         // Reverse the number : reverse the number in memory, value might change

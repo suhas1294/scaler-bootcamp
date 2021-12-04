@@ -2,7 +2,7 @@ package beginner._2021_12_01;
 
 import java.util.Scanner;
 
-public class _02ReverseNumber {
+public class _02PrintReverseNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number");

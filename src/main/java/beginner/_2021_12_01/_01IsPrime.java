@@ -11,6 +11,7 @@ public class _01IsPrime {
         for (int i = 2; i <= Math.sqrt(target); i++) {
             if (target%i==0){
                 divisorsCount++;
+                System.out.printf("%d divides %d\n", i, target);
                 System.out.println("Not prime");
                 break;
             }
