@@ -19,6 +19,5 @@ public class _03_AssignmentGcdOfTwoNumbers {
             cnt++;
         }
         System.out.println(String.format("Gcd of %d and %d is %d", num1, num2, gcd));
-
     }
 }
