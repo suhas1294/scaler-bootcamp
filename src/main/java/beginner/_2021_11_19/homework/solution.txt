@@ -1,0 +1,89 @@
+- How does your system ensure that 2 URLs never map to the same shortened URL?
+    ANS: when we create a short URL, we need to make sure, such a hashvalue (shortened url) does not exist in the system. Just before creating, we need to check if such a short url exist.
+
+- How will you ensure the system is very low latency?
+    ANS:
+    1. the app has to be a microservice
+    2. it has to be hosted in multiple instance managed by a load balancer
+    3. integrate fault tolerence system along with application
+    4. have minimal computation for the operation to be performed
+
+- What will happen if the machine storing the URL mapping dies? (Power outage / Hard Disk gone bad)
+    ANS:
+    1. power outrage : have power back up
+    2. hard disk gone wrong : run a cron every 12 hrs (or based on buisness requirement) to take a backup and store the back up in dedicated servers in diff network.
+
+- How do you make sure your system is consistent? This is to say, if I have shortened a URL, given the shortened URL, my system should always return the original URL no matter when I call your system.
+    ANS: we are maintaing data in a DB table which is indirectly a hashtable - it will always give whatever was stored for a particular URL even if you call it N times.
+
+- How do you make sure that your service never goes down? (No outage). You have to assume that your machines will die. How do you make sure your service is unaffected by those incidents (unless all of your machines die at once - Lets assume that never happens).
+    ANS:
+    1. Maintain a load balancer and multiple instances of servers where your application is run.
+    2. Implement CONSISTENT HASHING to ensure data is evenly spread across diff servers so that even if outage of any server happens, data of that server will be taken over by a nearest server(nearest in terms of hash value of server)
+
+________________________________________________________________
+READ AHEAD FOR psuedo code EXPLAINATION
+________________________________________________________________
+
+Lets say my domain is : bit.ly
+
+I have a end point : POST https://bit.ly/api/v1/shorten
+
+payload : {
+    "targetUrl": "https://example.com",
+    "custom_suffix": "myUrl"
+}
+
+// table schema design:
+create a table with two columns : URL , shortUrl, suffix. URL column being primary key and needs to be indexed.
+Also there will a duplicate table where shortUrl is primary key.
+
+// create a shortened URL
+public String shorten(String targetUrl, String...customSuffix){
+    if(checkIfUrlExists(targetUrl, customSuffix)){
+        record = select from table where URL is targetUrl and suffix == customSuffix
+        return record.shortUrl;
+    }
+    hashValue = generateHash()
+    if(customSuffix){
+        hashValue = hashValue + "-" + customSuffix
+    }
+    record  = create a record in DB with URl = targetUrl and shortUrl = hashValue;
+    return record.targetUrl;
+}
+
+// check if a shortened URl already exists
+public boolean checkIfUrlExists(String targetUrl, String...customSuffix){
+    String suffix = customSuffix ? customSuffix : null
+    record = select from table where URL is targetUrl and suffix == suffix
+    if(record){
+        return true;
+    }
+    return false;
+}
+
+// create a unique short string
+public static String generateHash(){
+    // step-1 : create hash
+    // step-2 : check if there is any existing hash value in table
+    while (hashValue does not exist in table){
+        newHashValue = generateHash()
+    }
+    return newHashValue;
+}
+
+// redirecting a user to actual url when user hits shortened URL.
+// shortened URL format:
+// without suffix : https://bit.ly/kjadbkjsdf
+// with suffix : https://bit.ly/kjadbkjsdf-myUrl
+
+public static void redirectBitUrl(url){
+    // extract path from url
+    try{
+        shortUrl = "https://bit.ly/" + pathName
+        actualUrl = get record from table where shortUrl = shortUrl
+        response.sendRedirect(url);
+    }catch(exceptoin){
+        redirect to 404 not found
+    }
+}
