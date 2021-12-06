@@ -1,3 +1,4 @@
 /.idea
 scaler-bootcamp.iml
 target/*
+.DS_Store
