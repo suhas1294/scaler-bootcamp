@@ -5,7 +5,6 @@ import java.util.Scanner;
 // Question : Print first N fibonacci Numbers
 
 public class PrintFirstNFibonacciNo {
-    static int n1 = 0, n2 = 1, n3 = 0;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
