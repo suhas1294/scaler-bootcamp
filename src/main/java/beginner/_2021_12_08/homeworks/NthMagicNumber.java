@@ -1,9 +1,11 @@
 package beginner._2021_12_08.homeworks;
 
+import beginner._2021_12_10.live_class.DecToBin;
+
 /**
  * Given an integer A, find and return the Ath magic number.
  * A magic number is defined as a number which can be expressed as a power of 5 or sum of unique powers of 5.
- * First few magic numbers are 5, 25, 30(5 + 25), 125, 130(125 + 5), ….
+ * First few magic numbers are 5, 25, 30(5 + 25), 125, 130(125 + 5), …. REFER IMAGE ATTACHED
  * 1 <= A <= 5000
  * Input format : The only argument given is integer A.
  * output format : Return the Ath magic number.
@@ -14,6 +16,7 @@ package beginner._2021_12_08.homeworks;
 public class NthMagicNumber {
     public static void main(String[] args) {
         System.out.println(solve(10));
+        System.out.println(decToBase5(10));
     }
 
     public static int solve(int A) {
@@ -32,5 +35,18 @@ public class NthMagicNumber {
             }
         }
         return result[A-1];
+    }
+
+    // More optimized solution without using any array
+    private static int decToBase5(int n){
+        int p = 5;
+        int ans = 0;
+        while (n > 0){
+            int rem = n % 2;
+            ans = ans + rem * p;
+            p *= 5;
+            n = n/2;
+        }
+        return ans;
     }
 }
