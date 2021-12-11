@@ -12,6 +12,7 @@ public class DecToBin {
         while (n > 0){
             int rem = n % 2;
             ans = ans + rem * p;
+            System.out.printf("n = %d, rem = %d, p = %d, ans = %d\n", n , rem, p, ans);
             p *= 10;
             n = n/2;
         }
