@@ -1,4 +1,4 @@
-package beginner._2021_12_10.live_class;
+package beginner._2021_12_10.assignment;
 
 import java.util.Scanner;
 
@@ -12,11 +12,11 @@ public class TrailingZerosInNthFactorial {
         System.out.println(getTrailingZeros(N));
     }
 
-    public static int getTrailingZeros(int n){
+    public static int getTrailingZeros(int A){
         int ans = 0;
         int p = 5;
-        while (n/p > 0){
-            ans += n/p;
+        while (A/p > 0){
+            ans += A/p;
             p = p * 5;
         }
         return ans;
