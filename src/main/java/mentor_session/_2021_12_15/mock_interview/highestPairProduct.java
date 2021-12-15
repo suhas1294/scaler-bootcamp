@@ -78,7 +78,7 @@ public class highestPairProduct {
                 lowest2 = lowest1; // always while updating first lowest, make sure to unload first lowest value to second lowest
                 lowest1 = input[i];
             }
-            // dont get names going by variables names, lowest2 will be actual lowest compared to lowest1
+            // dont go by variables names, lowest2 will be actual lowest compared to lowest1
             if (input[i] < 0 && input[i] < lowest1 ){
                 lowest2 = input[i];
             }
