@@ -1,0 +1,21 @@
+[
+    [1, 2, 10],
+    [2, 3, 20],
+    [2, 4, 24],
+    [3, 5, 30]
+]
+
+optimized approach:
+step-0:     0     0     0     0       0
+step-1:     10    0    -10    0       0     (put negative money for (j+1)th number, dont know why, repeat for all next steps )
+step-2:     0     20    0     -20     0
+step-3:     0     25    0     0       -25
+step-4:     0     0     30    0       0
+
+step-5:    10     45    20   -20    -25     (summation of all columns from prev steps)
+result:    10     55    75    55    30
+
+Questions:  (as a first time problem solver, )
+01. in step-1 : how do i know that i have to negate the amount, what is the meaning ?
+02. in step-1 : how do i know that -10 has to be put for 3rd element when j = 2
+03. in step-6 : how do i know that number has to be kept added for its next number ? what is the meaning ?
