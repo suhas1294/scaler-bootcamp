@@ -31,7 +31,10 @@ public class FirstMissingPositiveInteger {
         // initial logic i though of : find first and second least numbers such that they are positive and non-continious number
         // refer : https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/
 
-        // use the index of an array as hash key and value os present or not based on actual values in input array
+        // use the index of an array as hash key
+        // value of input array = index of boolean array
+        // so that when you loop through boolean array from 1 to n, whichever is first false is the answer.
+        // if answer is already in sorted and contiguous numbers, then return input array size + 1
         boolean[] present = new boolean[A.size()+1]; // why +1 ? : because in next steps you will be looping present array from 1 to A.size, since its from 1 we are doing +1
         for (int num: A) {
             if (num > 0 && num <= A.size()) present[num] = true;
