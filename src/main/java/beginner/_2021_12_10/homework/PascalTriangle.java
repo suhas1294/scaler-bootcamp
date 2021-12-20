@@ -33,11 +33,12 @@ output:
 public class PascalTriangle {
     static HashMap<Integer, Integer> factTable = new HashMap<>();
     public static void main(String[] args) {
-        solve(25);
-        ArrayList<ArrayList<Integer>> result = solve(25);
+        //solve(25);
+        /*ArrayList<ArrayList<Integer>> result = solve(25);
         for (ArrayList<Integer> row : result) {
             System.out.println(row);
-        }
+        }*/
+        solve2(25);
     }
 
     // optimized approach - no need to calculate any factorial
@@ -62,6 +63,34 @@ public class PascalTriangle {
         }
         result.remove(0);
         return result;
+    }
+
+    public static void solve2(int A) {
+        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+        for (int i = 1; i <= A+1; i++) {
+            ArrayList<Integer> row = new ArrayList<>();
+            row.add(1);
+
+            // pascal numbers
+            for (int j = 1; j < i-1; j++) {
+                ArrayList<Integer> prevRow = result.get(i-2);
+                int prevRowLeft = prevRow.get(j-1);
+                int prevRowRight = 0;
+                try {
+                    prevRowRight = prevRow.get(j);
+                }catch (Exception e){}
+                row.add(prevRowLeft + prevRowRight);
+            }
+            result.add(row);
+        }
+
+        result.remove(0);
+        for (ArrayList<Integer> row : result) {
+            for (Integer no : row) {
+                System.out.print(no + " ");
+            }
+            System.out.println();
+        }
     }
 
     // not-optimised method which may work until 13!
