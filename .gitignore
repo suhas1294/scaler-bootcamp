@@ -1,4 +1,5 @@
 /.idea
 scaler-bootcamp.iml
 target/*
+src/main/java/beginner/_2021_12_27/assessment
 .DS_Store

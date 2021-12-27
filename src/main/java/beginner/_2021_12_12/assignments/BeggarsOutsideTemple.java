@@ -41,6 +41,8 @@ public class BeggarsOutsideTemple {
     }
 
     // optimized approach
+    // When there is any problem which required us to loop a range, try applying this technique with prefix sum
+    // it might work well many problems.
     public static ArrayList<Integer> solve2(int A, ArrayList<ArrayList<Integer>> B) {
         ArrayList<Integer> result = new ArrayList<>();
 
