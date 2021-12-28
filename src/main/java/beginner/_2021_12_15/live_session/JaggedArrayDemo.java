@@ -2,6 +2,7 @@ package beginner._2021_12_15.live_session;
 
 import java.util.Scanner;
 
+// jagged array: create an array with variable number of columns
 public class JaggedArrayDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

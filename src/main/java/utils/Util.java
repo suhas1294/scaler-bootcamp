@@ -10,4 +10,9 @@ public class Util {
         }
         return result;
     }
+    public static void swapIndicesOfanArray(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
