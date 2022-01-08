@@ -1,0 +1,40 @@
+Write time complexity for below code.
+
+_________________________________________________
+int a = 0;
+for (i = 0; i < N; i++) {
+    for (j = N; j > i; j--) {
+        a = a + i + j;
+    }
+}
+answer: O(N^2)
+_________________________________________________
+int i, j, k = 0;
+for (i = n / 2; i <= n; i++) {
+    for (j = 2; j <= n; j = j * 2) {
+        k = k + n / 2;
+    }
+}
+answer: O(N Log N)
+_________________________________________________
+int a = 0, i = N;
+while (i > 0) {
+    a += i;
+    i /= 2;
+}
+answer: O(Log N)
+_________________________________________________
+
+The complexity of Binary search algorithm is : O(Log N)
+_________________________________________________
+
+If for an algorithm time complexity is given by O(1) then complexityof it is: constant
+_________________________________________________
+
+If for an algorithm time complexity is given by O(log2n) then complexity will: logarithmic
+_________________________________________________
+
+If for an algorithm time complexity is given by O(n) then complexityof it is: linear
+_________________________________________________
+
+If for an algorithm time complexity is given by O((3/2)^n) then complexity will: exponential

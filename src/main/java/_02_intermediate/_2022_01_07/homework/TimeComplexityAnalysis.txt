@@ -1,0 +1,81 @@
+What is the time complexity of following codes :
+
+for (int i = 3 ; i < n / 3  ;  i += 3) {
+    for(int j = 2 ; j < n / 2 ; j += 2){
+        // O(1) operation
+    }
+}
+
+answer: O ( n ^ 2)
+_________________________________________________
+
+public void solve() {
+    int i = 1;
+    while (i < n) {
+        int x = i;
+        while (x--> 0) {
+            //O(1) operation
+        }
+        i++;
+    }
+}
+answer: O ( n ^ 2)
+_________________________________________________
+
+int i = 0;
+while(i*i <= N){
+   for(int j = 0; j <= N; j++){
+      for(int k = 0; k <= N; k++,i++){
+         //O(1) operation
+      }
+   }
+   i++;
+}
+
+answer: O ( n ^ 2)
+_________________________________________________
+for(int i = 0; i < n; i++){
+    for(int j = i - 1; j >= 0; j++){
+            ans += i + j ;
+    }
+}
+
+answer: Code will run indefinitely
+_________________________________________________
+for (i = 0; i < N; i++) {
+  for (j = i; j < N; j++) {
+     break;
+  }
+}
+answer: O(N)
+_________________________________________________
+
+int count =0;
+while(N){
+    count++;
+    N/=3;
+}
+
+answer: O(log(N)) {Base 3}
+_________________________________________________
+public void solve(int N) {
+    for(int i = 0; i < (1 << N); i++) {
+        int j = i;
+        while(j > 0){
+            j -= 1;
+        }
+    }
+}
+
+answer: O(4^N)
+_________________________________________________
+public static void fun(int n) {
+    int i, j;
+    for (i = 1; i * i <= n; i++) {
+        for (j = 1; j * j <= i; j += i) {
+            //O(1) operation
+        }
+    }
+}
+
+answer: O(√n)

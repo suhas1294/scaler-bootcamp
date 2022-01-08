@@ -1,0 +1,43 @@
+An algorithm consists of two independent piece of code, having complexities f(n) and g(n) respectively.
+What would be the complexity of the complete algorithm
+
+ans: Max(f(n), g(n))
+_________________________________________________
+
+What is the time, space complexity of following code :
+
+int a = 0, b = 0;
+for (i = 0; i < N; i++) {
+    for (j = 0; j < N; j++) {
+        a = a + j;
+    }
+}
+for (k = 0; k < N; k++) {
+    b = b + k;
+}
+
+answer: O(N * N) time, O(1) space
+_________________________________________________
+
+int count = 0;
+for (int i = N; i > 0; i /= 2) {
+    for (int j = 0; j < i; j++) {
+        count += 1;
+    }
+}
+answer: O(N)
+_________________________________________________
+int a = 0;
+
+for (i = 0; i < N; i++) {
+    for (j = N; j > i; j--) {
+        a = a + i + j;
+    }
+}
+answer: O(N*N)
+_________________________________________________
+
+To measure Time complexity of an algorithm Big O notation is used which:
+- describes limiting behaviour of the function
+- upper bound on growth rate of the function
+- characterises a function based on growth of function
