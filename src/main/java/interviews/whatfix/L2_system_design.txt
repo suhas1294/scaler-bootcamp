@@ -1,0 +1,11 @@
+(React Question) Given a nested menu object in js, implement a simple menu card, cupon clicking of a menu item, show its subcategories in menu along with go back. on click on go back navigate back to previous menu.
+
+dataSet = [{"text":"Electronics","subCategories":[{"text":"Mobile","subCategories":[]},{"text":"Heaters","subCategories":[]}]},{"text":"Fashion","subCategories":[{"text":"Men’s wear","subCategories":[]},{"text":"Kid’s wear","subCategories":[]}]}]
+
+While clicking, Drill down to nested menu until you find no sub categories ('go back' btn should be shown when you have traversed inside)
+____________________________________
+
+design a system which will process a string (ex : to lower case, replace space with underscore, take out stop words like 'and', 'or', 'between').
+system should be having single responsibility principle.
+
+something similar: https://sourcemaking.com/design_patterns/chain_of_responsibility/java/2
