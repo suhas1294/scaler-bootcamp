@@ -1,4 +1,4 @@
-package _02_intermediate._2022_01_17.homework;
+package _02_intermediate._2022_01_17.sub_arrays.homework;
 
 import utils.Util;
 

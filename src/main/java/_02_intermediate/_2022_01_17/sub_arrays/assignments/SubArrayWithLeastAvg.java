@@ -1,4 +1,4 @@
-package _02_intermediate._2022_01_17.assignments;
+package _02_intermediate._2022_01_17.sub_arrays.assignments;
 
 import utils.Util;
 

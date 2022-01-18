@@ -1,6 +1,4 @@
-package _02_intermediate._2022_01_17.homework;
-
-import java.util.ArrayList;
+package _02_intermediate._2022_01_17.sub_arrays.homework;
 
 public class AlternatingSubArrays {
     /*public static ArrayList<Integer> solve(ArrayList<Integer> A, int B) {

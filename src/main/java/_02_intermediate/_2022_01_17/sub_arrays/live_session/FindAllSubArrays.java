@@ -1,4 +1,4 @@
-package _02_intermediate._2022_01_17.live_session;
+package _02_intermediate._2022_01_17.sub_arrays.live_session;
 
 public class FindAllSubArrays {
     // brute force solution  : time complexity : n^3
