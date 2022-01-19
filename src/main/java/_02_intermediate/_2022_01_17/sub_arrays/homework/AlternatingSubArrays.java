@@ -1,8 +1,54 @@
 package _02_intermediate._2022_01_17.sub_arrays.homework;
 
+import utils.Util;
+
+import java.util.ArrayList;
+
 public class AlternatingSubArrays {
-    /*public static ArrayList<Integer> solve(ArrayList<Integer> A, int B) {
-    }*/
+    public static ArrayList<Integer> solve(ArrayList<Integer> A, int B) {
+        ArrayList<Integer> result = new ArrayList<>();
+        int expectedArraySize = 2 * B + 1;
+        if (B == 0){
+            for (int i = 0; i < A.size(); i++) {
+                result.add(i);
+            }
+            return result;
+        }
+        if (expectedArraySize > A.size()-1) return new ArrayList<>();
+        for (int si = 0; si <= A.size()-(expectedArraySize); si++) {
+            int ei = si + expectedArraySize-1;
+            if(isAlternatingArray(A, si, ei)){
+                int midPoint = (si + ei)/2;
+                if (!result.contains(midPoint)) result.add(midPoint);
+            }
+        }
+        return result;
+    }
+
+    private static boolean isAlternatingArray(ArrayList<Integer> a, int si, int ei) {
+        for (int i = (a.get(si) == 1 ? si : (si+1)); i <= ei; i+=2) {
+            if (a.get(i) != 1) return false;
+        }
+        for (int i = (a.get(si) == 0 ? si : (si+1)); i <= ei; i+=2) {
+            if (a.get(i) != 0) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(solve(Util.fillArrayList(new int[]{1, 0, 1, 0, 1}), 1)); // expected : [1,2,3]
+        System.out.println(solve(Util.fillArrayList(new int[]{0, 0, 0, 1, 1, 0, 1}), 0)); // expected : [0 to 6]
+        System.out.println(solve(Util.fillArrayList(new int[]{0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0}), 5)); //  expected: []
+        System.out.println(solve(Util.fillArrayList(new int[]{0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1}), 1)); //  expected: [3 7 8]
+
+        /*System.out.println(isAlternatingArray(Util.fillArrayList(new int[]{1, 0, 1, 0 ,1, 0, 1}), 0, 6));
+        System.out.println(isAlternatingArray(Util.fillArrayList(new int[]{0, 1, 0, 1, 0 ,1, 0}), 0, 6));
+        System.out.println(isAlternatingArray(Util.fillArrayList(new int[]{1, 0, 1, 0 ,1, 0, 1, 0}), 0, 7));
+        System.out.println(isAlternatingArray(Util.fillArrayList(new int[]{0, 1, 0, 1, 0 ,1, 0, 1}), 0, 7));
+        System.out.println(isAlternatingArray(Util.fillArrayList(new int[]{0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1}), 8, 10));*/
+
+
+    }
 }
 
 /*
