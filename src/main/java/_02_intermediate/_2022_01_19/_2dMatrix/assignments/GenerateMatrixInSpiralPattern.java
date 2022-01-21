@@ -5,7 +5,6 @@ import utils.Util;
 import java.util.ArrayList;
 
 //credits: https://leetcode.com/problems/spiral-matrix-ii/discuss/1703964/Java-Solution
-
 public class GenerateMatrixInSpiralPattern {
 	public static ArrayList<ArrayList<Integer>> generateMatrix(int A) {
 		int n=1;
