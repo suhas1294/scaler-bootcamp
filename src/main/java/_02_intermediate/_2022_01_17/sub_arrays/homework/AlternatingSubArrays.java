@@ -19,7 +19,7 @@ public class AlternatingSubArrays {
             int ei = si + expectedArraySize-1;
             if(isAlternatingArray(A, si, ei)){
                 int midPoint = (si + ei)/2;
-                if (!result.contains(midPoint)) result.add(midPoint);
+                if (!result.contains(midPoint)) result.add(midPoint); // alternatively we can use a set here
             }
         }
         return result;
