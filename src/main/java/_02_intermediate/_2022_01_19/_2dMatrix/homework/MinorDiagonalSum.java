@@ -8,6 +8,25 @@ import java.util.List;
 public class MinorDiagonalSum {
     public static int solve(final List<ArrayList<Integer>> A) {
         int sum = 0;
+        int row = A.size();
+        int col = A.get(0).size();
+        int i = 0;
+        int j = col - 1;
+        while (i < row && j>=0){
+            System.out.println("i = " + i + " j = " + j);
+            sum += A.get(i).get(j);
+            i++;
+            j--;
+        }
+        //for loop equivalent
+        /*for (int i = 0, j = A[0].length -1 ; i < A.length && j>=0; i++, j--) {
+            sum += A[i][j];
+        }*/
+        return sum;
+    }
+
+    public static int solve2(final List<ArrayList<Integer>> A) {
+        int sum = 0;
         for (int i = 0; i < A.size(); i++) {
             for (int j = 0; j < A.get(0).size(); j++) {
                 if (i  + j == A.size() - 1) {
@@ -36,7 +55,6 @@ public class MinorDiagonalSum {
                 {-4, 5, -6},
                 {-7, -8, 9}
         }); // -5
-        System.out.println(solve(input));
     }
 }
 
