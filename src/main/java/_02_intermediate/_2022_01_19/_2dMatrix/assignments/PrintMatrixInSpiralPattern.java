@@ -4,8 +4,10 @@ import utils.Util;
 
 import java.util.ArrayList;
 
-public class PrintSpiralMatrix {
-    public static ArrayList<ArrayList<Integer>> generateMatrix(int A) {
+// this program prints the already existing 2d matrix in spiral pattern.
+
+public class PrintMatrixInSpiralPattern {
+    public static ArrayList<ArrayList<Integer>> printSpiral(int A) {
         ArrayList<ArrayList<Integer>> normalMatrix = new ArrayList<>();
         if (A == 1) {
             ArrayList<Integer> arr = new ArrayList<>();
@@ -14,6 +16,7 @@ public class PrintSpiralMatrix {
             return normalMatrix;
         }
 
+        // step-1 generating a matrix which will be printed in spiral pattern later
         for (int i = 1; i <= (A * A); i+=A) {
             ArrayList<Integer> row = new ArrayList<>();
             for (int j = i; j <= i+(A-1); j++) {
@@ -28,30 +31,31 @@ public class PrintSpiralMatrix {
 
         while (top <= bottom && left <= right ){
             ArrayList<Integer> row = new ArrayList<>();
-            switch (direction){
-                case 0:
+            switch (direction) {
+                case 0 -> {
                     for (int i = left; i <= right; i++) {
                         row.add(normalMatrix.get(top).get(i));
                     }
                     top++;
-                    break;
-                case 1:
-                    for (int i = top; i <= bottom ; i++) {
+                }
+                case 1 -> {
+                    for (int i = top; i <= bottom; i++) {
                         row.add(normalMatrix.get(i).get(right));
                     }
                     right--;
-                    break;
-                case 2:
-                    for (int i = right; i >= left ; i--) {
+                }
+                case 2 -> {
+                    for (int i = right; i >= left; i--) {
                         row.add(normalMatrix.get(bottom).get(i));
                     }
                     bottom--;
-                    break;
-                default: // 3
-                    for (int i = bottom; i >= top ; i--) {
+                }
+                default -> { // 3
+                    for (int i = bottom; i >= top; i--) {
                         row.add(normalMatrix.get(i).get(left));
                     }
                     left++;
+                }
             }
             spiralMatrix.add(row);
             direction = (direction + 1) % A;
@@ -60,6 +64,6 @@ public class PrintSpiralMatrix {
     }
 
     public static void main(String[] args) {
-        Util.print2DMatrix(generateMatrix(5));
+        Util.print2DMatrix(printSpiral(5));
     }
 }
