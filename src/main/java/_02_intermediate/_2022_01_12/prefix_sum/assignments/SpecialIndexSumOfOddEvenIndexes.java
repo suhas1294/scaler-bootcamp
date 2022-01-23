@@ -3,7 +3,6 @@ package _02_intermediate._2022_01_12.prefix_sum.assignments;
 import utils.Util;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SpecialIndexSumOfOddEvenIndexes {
     public static int solve(ArrayList<Integer> A) {
@@ -37,7 +36,7 @@ public class SpecialIndexSumOfOddEvenIndexes {
 
     public static void main(String[] args) {
         //ArrayList<Integer> input = Util.fillArrayList(new int[]{2, 1, 6, 4});
-        ArrayList<Integer> input = Util.fillArrayList(new int[]{1,1,1});
+        ArrayList<Integer> input = Util.arrayToList(new int[]{1,1,1});
         //ArrayList<Integer> input = Util.fillArrayList(new int[]{4, 3, 2, 7, 6, -2});
         System.out.println(solve(input));
     }

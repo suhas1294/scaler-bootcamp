@@ -35,7 +35,7 @@ public class SubArrayClosestMinMax {
 
     public static void main(String[] args) {
         //ArrayList<Integer> input = Util.fillArrayList(new int[]{1,6,4,6,5,1,5,2,6,4,4,2,1});
-        ArrayList<Integer> input = Util.fillArrayList(new int[]{814, 761, 697, 483, 981});
+        ArrayList<Integer> input = Util.arrayToList(new int[]{814, 761, 697, 483, 981});
         System.out.println(solve(input));
     }
 }

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class GoodPair {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4};
-        ArrayList input = Util.fillArrayList(arr);
+        ArrayList input = Util.arrayToList(arr);
         int sum = 7;
         System.out.println(solve(input, sum));
     }

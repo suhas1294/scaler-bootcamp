@@ -19,7 +19,7 @@ public class ProducyArrayPuzzle {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> input = Util.fillArrayList(new int[]{5, 6, 5, 2, 5, 7, 10, 3, 2, 6 });
+        ArrayList<Integer> input = Util.arrayToList(new int[]{5, 6, 5, 2, 5, 7, 10, 3, 2, 6 });
         System.out.println(solve(input));
     }
 }

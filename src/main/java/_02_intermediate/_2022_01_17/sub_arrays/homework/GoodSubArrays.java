@@ -33,8 +33,8 @@ public class GoodSubArrays {
     }
 
     public static void main(String[] args) {
-        System.out.println(solve(Util.fillArrayList(new int[]{1, 2, 3, 4, 5}), 4)); // 6
-        System.out.println(solve(Util.fillArrayList(new int[]{13, 16, 16, 15, 9, 16, 2, 7, 6, 17, 3, 9}), 65)); // 36
+        System.out.println(solve(Util.arrayToList(new int[]{1, 2, 3, 4, 5}), 4)); // 6
+        System.out.println(solve(Util.arrayToList(new int[]{13, 16, 16, 15, 9, 16, 2, 7, 6, 17, 3, 9}), 65)); // 36
     }
 }
 

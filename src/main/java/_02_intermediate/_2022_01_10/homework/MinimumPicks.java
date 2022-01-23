@@ -20,7 +20,7 @@ public class MinimumPicks {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> input = Util.fillArrayList(new int[]{74, 9, 51, 51, 75, 0, 35, 89, 96, 77});
+        ArrayList<Integer> input = Util.arrayToList(new int[]{74, 9, 51, 51, 75, 0, 35, 89, 96, 77});
         System.out.println(solve(input));
     }
 }

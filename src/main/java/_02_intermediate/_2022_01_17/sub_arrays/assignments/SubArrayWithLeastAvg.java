@@ -24,9 +24,9 @@ public class SubArrayWithLeastAvg {
     }
 
     public static void main(String[] args) {
-        System.out.println(solve(Util.fillArrayList(new int[]{3, 7, 90, 20, 10, 50, 40}), 3)); // expected : 3
-        System.out.println(solve(Util.fillArrayList(new int[]{3, 7, 5, 20, -10, 0, 12}), 2)); // expected : 4
-        System.out.println(solve(Util.fillArrayList(new int[]{20, 3, 13, 5, 10, 14, 8, 5, 11, 9, 1, 11}), 9)); // expected : 3
+        System.out.println(solve(Util.arrayToList(new int[]{3, 7, 90, 20, 10, 50, 40}), 3)); // expected : 3
+        System.out.println(solve(Util.arrayToList(new int[]{3, 7, 5, 20, -10, 0, 12}), 2)); // expected : 4
+        System.out.println(solve(Util.arrayToList(new int[]{20, 3, 13, 5, 10, 14, 8, 5, 11, 9, 1, 11}), 9)); // expected : 3
     }
 }
 

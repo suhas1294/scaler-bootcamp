@@ -36,10 +36,10 @@ public class AlternatingSubArrays {
     }
 
     public static void main(String[] args) {
-        System.out.println(solve(Util.fillArrayList(new int[]{1, 0, 1, 0, 1}), 1)); // expected : [1,2,3]
-        System.out.println(solve(Util.fillArrayList(new int[]{0, 0, 0, 1, 1, 0, 1}), 0)); // expected : [0 to 6]
-        System.out.println(solve(Util.fillArrayList(new int[]{0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0}), 5)); //  expected: []
-        System.out.println(solve(Util.fillArrayList(new int[]{0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1}), 1)); //  expected: [3 7 8]
+        System.out.println(solve(Util.arrayToList(new int[]{1, 0, 1, 0, 1}), 1)); // expected : [1,2,3]
+        System.out.println(solve(Util.arrayToList(new int[]{0, 0, 0, 1, 1, 0, 1}), 0)); // expected : [0 to 6]
+        System.out.println(solve(Util.arrayToList(new int[]{0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0}), 5)); //  expected: []
+        System.out.println(solve(Util.arrayToList(new int[]{0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1}), 1)); //  expected: [3 7 8]
 
         /*System.out.println(isAlternatingArray(Util.fillArrayList(new int[]{1, 0, 1, 0 ,1, 0, 1}), 0, 6));
         System.out.println(isAlternatingArray(Util.fillArrayList(new int[]{0, 1, 0, 1, 0 ,1, 0}), 0, 6));

@@ -24,7 +24,7 @@ public class MaxSubArrayLimit {
         //System.out.println(maxSubarray(5, 12, input));
         //ArrayList<Integer> input = Util.fillArrayList(new int[]{2, 2, 2});
         //System.out.println(maxSubarray(3, 1, input));
-        ArrayList<Integer> input = Util.fillArrayList(new int[]{1, 2, 4, 4, 5, 5, 5, 7, 5});
+        ArrayList<Integer> input = Util.arrayToList(new int[]{1, 2, 4, 4, 5, 5, 5, 7, 5});
         System.out.println(maxSubarray(9, 14, input));
     }
 }

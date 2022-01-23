@@ -46,7 +46,7 @@ public class LittlePonnyAndMobilePhones {
     public static void main(String[] args) {
         int[] A = {3, 4, 4, 6};
         int[] B = {20, 4, 10, 2};
-        System.out.println(solve(Util.fillArrayList(A), Util.fillArrayList(B)));
+        System.out.println(solve(Util.arrayToList(A), Util.arrayToList(B)));
     }
 
     // optimized approach using prefix sum technique, time xomplexity : (q log n)

@@ -31,7 +31,7 @@ public class EquilibriumIndex {
 
     public static void main(String[] args) {
         //ArrayList<Integer> input = Util.fillArrayList(new int[]{-7, 1, 5, 2, -4, 3, 0});
-        ArrayList<Integer> input = Util.fillArrayList(new int[]{1, 2, 3, 7, 1, 2, 3 });
+        ArrayList<Integer> input = Util.arrayToList(new int[]{1, 2, 3, 7, 1, 2, 3 });
         System.out.println(solve(input));
     }
 }

@@ -35,7 +35,7 @@ public class PickFromBothSides {
 
         /*ArrayList<Integer> input = Util.fillArrayList(new int[] {1,2});
         System.out.println(solve(input, 1));*/
-        ArrayList<Integer> input = Util.fillArrayList(new int[] {-1, -2, 0, -2, -2, 0, 3});
+        ArrayList<Integer> input = Util.arrayToList(new int[] {-1, -2, 0, -2, -2, 0, 3});
         System.out.println(solve(input, 7));
     }
 }

@@ -32,8 +32,8 @@ public class MaxSumContigiousSubArray {
     }
 
     public static void main(String[] args) {
-        System.out.println(maxSubArray(Util.fillArrayList(new int[]{1, 2, 3, 4, -10})));
-        System.out.println(maxSubArray(Util.fillArrayList(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4})));
+        System.out.println(maxSubArray(Util.arrayToList(new int[]{1, 2, 3, 4, -10})));
+        System.out.println(maxSubArray(Util.arrayToList(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4})));
     }
 }
 /*

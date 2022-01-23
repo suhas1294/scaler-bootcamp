@@ -27,7 +27,7 @@ import java.util.Arrays;
  */
 public class LittlePonnyAndBoringArrays {
     public static void main(String[] args) {
-        ArrayList<Integer> arr = Util.fillArrayList(new int[]{10, 5, 1, 8, 4});
+        ArrayList<Integer> arr = Util.arrayToList(new int[]{10, 5, 1, 8, 4});
         System.out.println(solve(arr));
     }
     public static int solve(ArrayList<Integer> A) {

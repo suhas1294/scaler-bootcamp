@@ -36,8 +36,8 @@ public class CountingSubarrays {
     }
 
     public static void main(String[] args) {
-        System.out.println(solve(Util.fillArrayList(new int[]{2,5,6}), 10)); // 4
-        System.out.println(solve(Util.fillArrayList(new int[]{1, 11, 2, 3, 15}), 10)); // 4
+        System.out.println(solve(Util.arrayToList(new int[]{2,5,6}), 10)); // 4
+        System.out.println(solve(Util.arrayToList(new int[]{1, 11, 2, 3, 15}), 10)); // 4
     }
 }
 

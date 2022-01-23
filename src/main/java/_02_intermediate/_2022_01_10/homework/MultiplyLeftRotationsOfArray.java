@@ -34,8 +34,8 @@ public class MultiplyLeftRotationsOfArray {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> A = Util.fillArrayList(new int[]{1, 2, 3, 4, 5 });
-        ArrayList<Integer> B = Util.fillArrayList(new int[]{2, 3 });
+        ArrayList<Integer> A = Util.arrayToList(new int[]{1, 2, 3, 4, 5 });
+        ArrayList<Integer> B = Util.arrayToList(new int[]{2, 3 });
         // expected answer : [3 4 5 1 2 ] [4 5 1 2 3 ]
         ArrayList<ArrayList<Integer>> result = solve(A, B);
         result.forEach(System.out::println);
