@@ -1,5 +1,8 @@
 package _02_intermediate._2022_01_21.sliding_window.assignments;
 
+// eact soln: https://www.geeksforgeeks.org/length-of-longest-consecutive-ones-by-at-most-one-swap-in-a-binary-string/
+// ext solns: https://github.com/joric/interviewbit/blob/master/programming/random/length-of-longest-consecutive-ones.md
+// very similar question: (flip instead of swap) : https://www.youtube.com/watch?v=OaMbeeSSv7Y
 public class LengthOfLongestConsecutiveOnes {
     public static int solve(String A) {
         return -1;
