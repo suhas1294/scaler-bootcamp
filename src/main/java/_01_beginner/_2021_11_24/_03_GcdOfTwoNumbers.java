@@ -1,6 +1,6 @@
 package _01_beginner._2021_11_24;
 
-public class _03_AssignmentGcdOfTwoNumbers {
+public class _03_GcdOfTwoNumbers {
     public static void main(String[] args) {
         if (args.length < 0){
             System.out.println("please input 2 numbers, usage : java _03_GcdOfTwoNumbers 30, 15");

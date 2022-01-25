@@ -2,7 +2,7 @@ package _01_beginner._2021_11_24;
 
 import java.util.Scanner;
 
-public class _04_AssignmentGcdArray {
+public class _04_GcdOfArray {
 
     static int gcdOfTwoNumbers(int num1, int num2){
         int gcd = 1;

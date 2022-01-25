@@ -1,7 +1,7 @@
 package _01_beginner._2021_12_27.assessment;
 
 import java.util.ArrayList;
-
+// given an array, find max even number and least odd number.
 public class MinimumPicks {
     public int solve(ArrayList<Integer> A) {
         int curMaxEven = Integer.MIN_VALUE, curMinOdd = Integer.MAX_VALUE;

@@ -2,7 +2,7 @@ package _01_beginner._2021_11_24;
 
 import java.util.Scanner;
 
-public class _02_AssignmentReverseNumber {
+public class _02_PrintNumberInReverseOrder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
