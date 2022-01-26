@@ -1,39 +1,57 @@
 package mentor_session._2022_01_23.mock_interview;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
+import java.util.*;
 
 public class FindMaxInSubArrayOfSizeK {
-    // optimal solution - using deque
+    // optimized solution using Dqueue, tc: O(n)
     public static ArrayList<Integer> solve(int[] arr, int k){
-        Deque<Integer> dq = new ArrayDeque<>();
         ArrayList<Integer> result = new ArrayList<>();
-        // step-1 : first find largest of first k elements
-        int curMax = arr[0];
-        int i;
-        for (i = 0; i < k; i++) {
-            while (!dq.isEmpty() && arr[i] >= arr[dq.peekLast()]){
+        Deque<Integer> dq = new LinkedList<Integer>();
+
+        int we;
+        for (we = 0; we < k; ++we) {
+            // For every element, the previous smaller elements are useless so remove them from dq
+            while (!dq.isEmpty() && arr[we] >= arr[dq.peekLast()]) {
                 dq.removeLast();
             }
-            dq.addLast(i);
+            dq.addLast(we); // Add new element at rear of queue
         }
-        System.out.println(dq);
-        System.out.println("---");
 
-        // step-2 :
-        for (; i < arr.length; i++) {
-            result.add(arr[dq.peek()]); // largest element of  previous window, so print it
+        for (; we < arr.length; we++){
+            int ws = we-k + 1;
+            result.add(arr[dq.peek()]); // element at the front of the queue is the largest element
+
             // Remove the elements which are out of this window
-            while(!dq.isEmpty() && dq.peek() <= i-k){
+            while ((!dq.isEmpty()) && dq.peek() < ws) {
                 dq.removeFirst();
             }
-            //Remove all elements smaller than the currently being added element
-            while(!dq.isEmpty() && arr[i] >= arr[dq.peekLast()]){
+
+            // Remove all elements smaller than the currently being added element
+            while ((!dq.isEmpty()) && arr[we] >= arr[dq.peekLast()]) {
                 dq.removeLast();
             }
-            dq.addLast(i);
-            result.add(arr[dq.peek()]); // e maximum element of last window
+            dq.addLast(we); //current element
+        }
+        result.add(arr[dq.peek()]); // maximum element of last window
+        return result;
+    }
+
+
+    // sub-optimized solution using priority queue, tc: n log k
+    public static ArrayList<Integer> solve2(int[] arr, int k){
+        Queue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+        ArrayList<Integer> result = new ArrayList<>();
+        int si = 0;
+        for (int ei = 0; ei < arr.length; ei++) {
+            pq.add(arr[ei]);
+            if (ei - si + 1 == k){ // if window size exceeds K, then move si
+                int maxEle = pq.peek();
+                result.add(maxEle);
+                if (maxEle == arr[si]){
+                    pq.remove();
+                }
+                si++;
+            }
         }
         return result;
     }
@@ -53,34 +71,7 @@ public class FindMaxInSubArrayOfSizeK {
     }
 
     public static void main(String[] args) {
-        System.out.println(solve(new int[]{1, 2, 3, 1, 4, 5, 2, 3, 6}, 3)); // 3 3 4 5 5 5 6
+        // System.out.println(solve(new int[]{1, 2, 3, 1, 4, 5, 2, 3, 6}, 3));
+        System.out.println(solve(new int[]{1, 2, 3, 1, 1, 1, 4, 5, 2, 3, 6}, 3));
     }
 }
-
-/*
-Given an array and an integer K, find the maximum for each and every contiguous subarray of size k.
-
-Examples :
-0, 1, 2, 3, 4, 5, 6, 7, 8
-1, 2, 3, 1, 4, 5, 2, 3, 6
-
-
-[6]                                   i
-Input: arr[] = {1, 2, 3, 1, 4, 5, 2, 3, 6}, K = 3
-Output: 3 3 4 5 5 5 6
-Explanation:
-Maximum of 1, 2, 3 is 3
-Maximum of 2, 3, 1 is 3
-Maximum of 3, 1, 4 is 4
-Maximum of 1, 4, 5 is 5
-Maximum of 4, 5, 2 is 5
-Maximum of 5, 2, 3 is 5
-Maximum of 2, 3, 6 is 6
-
-Input: arr[] = {8, 5, 10, 7, 9, 4, 15, 12, 90, 13}, K = 4
-Output: 10 10 10 15 15 90 90
-Explanation:
-Maximum of first 4 elements is 10, similarly for next 4
-elements (i.e from index 1 to 4) is 10, So the sequence
-generated is 10 10 10 15 15 90 90
-*/
