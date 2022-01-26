@@ -1,0 +1,37 @@
+ATS compliant
+mention linkedin profile
+make links as hyperlink
+1 line objective - how much exp, major programming language.
+
+skills to technical skills
+segregate skills
+include ds & algo, dsitributed system, hld, lld, scaling.
+
+messaging queue - kafka
+cache - redis
+build systems - jenkins
+
+exclude outdated things
+
+experience : dont use 'client'
+include : most recent org : show you are majorly working in current project
+try to quantify info.  - what kind of problem i have worked on ? what kind of buisness requirement ?
+
+Currently mentoring the group of junior people in my team. Additionally, managing end to end
+product delivery
+• Actively involved in tech-hiring and team building management activities.
+
+part of lld & hld, part of designing.
+education:
+
+section to be included :
+    awards & recognization: hackthon, patent, research papers.
+
+code shef / hackerrank
+________________________________________________
+
+about section : generic information
+worked on apache kafka and increases throughput,
+
+Implemented request queuing and asynchronous processing using Apache Kafka to achieve
+higher throughput and improve application responsiveness and availability.
