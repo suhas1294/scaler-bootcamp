@@ -1,4 +1,4 @@
-package _02_intermediate._2022_12_24.bit_manipulation.homework;
+package _02_intermediate._2022_01_24.bit_manipulation.homework;
 
 public class InterestingArray {
     public static String solve(int[] A) {

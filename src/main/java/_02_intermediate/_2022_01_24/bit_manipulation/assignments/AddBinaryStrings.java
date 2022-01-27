@@ -1,4 +1,4 @@
-package _02_intermediate._2022_12_24.bit_manipulation.assignments;
+package _02_intermediate._2022_01_24.bit_manipulation.assignments;
 
 public class AddBinaryStrings {
     public static String addBinary(String A, String B) {
