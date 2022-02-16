@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitwise calculator</title>
+</head>
+
+<body>
+<label for="first">a : </label>
+<input
+        autocomplete="off"
+        onkeyup="calculate()"
+        type="text"
+        id="first"
+        name="first"
+/>
+<label for="first">b</label>
+<input
+        autocomplete="off"
+        onkeyup="calculate()"
+        type="text"
+        id="second"
+        name="second"
+/>
+<p>a & b = <span class="and_result"></span></p>
+<p>a | b = <span class="or_result"></span></p>
+<p>a ^ b = <span class="xor_result"></span></p>
+</body>
+<script>
+    function calculate() {
+        const a = Number(document.getElementById("first").value) || 0;
+        const b = Number(document.getElementById("second").value) || 0;
+        document.querySelector("span.and_result").textContent = a & b;
+        document.querySelector("span.or_result").textContent = a | b;
+        document.querySelector("span.xor_result").textContent = a ^ b;
+    }
+</script>
+</html>

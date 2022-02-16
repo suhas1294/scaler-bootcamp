@@ -1,0 +1,28 @@
+if a (decimal) number is odd, then 0th bit or right most bit is set.
+
+a & 0 = 0
+a & a = a
+a | 0 = a
+a | a = a
+a ^ 0 = a
+a ^ a = 0
+________________________
+
+a & b = b & a
+a & b & c = c & b & a
+a | b = b | a
+a ^ b = b ^ a
+________________________
+
+a << n  = a * 2^n
+If a = 1
+1 << n = 2^n
+________________________
+
+a >> n  = a / 2^n
+________________________
+
+n & n-1  : right most set bit becomes zero
+________________________
+
+if a number is 2^n then there will be only one set bit.

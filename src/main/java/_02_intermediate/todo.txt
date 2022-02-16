@@ -1,0 +1,2 @@
+problems that are giving TLE:
+    src/main/java/_02_intermediate/_2022_01_26/bit_manipulation/homework/SubArrayWithBitwiseOR1.java

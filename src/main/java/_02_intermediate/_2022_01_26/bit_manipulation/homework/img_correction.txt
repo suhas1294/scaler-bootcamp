@@ -1,0 +1,2 @@
+after taking 2's compliment of a number,
+number = number & number's 2's compliment.
