@@ -1,0 +1,28 @@
+
+Question:
+
+In a country where everyone wants a boy, each family continues having babies till they have a boy.
+After some time, what is the proportion of boys to girls in the country?
+(Assuming probability of having a boy or a girl is the same)
+
+Round off your answer to 2 decimal places and output the answer as I.xx
+where I is the integer part of your answer, and xx are the first 2 decimal places of the rounded off answer.
+
+
+solution:
+Assume there are C number of couples so there would be C boys. The number of girls can be calculated by the following method.
+Number of girls = 0*(Probability of 0 girls) + 1* (Probability of 1 girl) + 2* (Probability of 2 girls) + ... = 0 + C/4 + 2C/8 + 3C/16 + ...
+
+Number of girls = 0*(Probability of 0 girls) + 1*(Probability of 1 girl) + 2*(Probability of 2 girls) + ...
+Number of girls = 0*(C*1/2) + 1*(C*1/2*1/2) + 2*(C*1/2*1/2*1/2) + ...
+Number of girls = 0 + C/4 + 2*C/8 + 3*C/16 + ...
+Number of girls = C
+
+(using mathematical formulas; it becomes apparent if you just sum up the first 4-5 terms)
+The proportion of boys to girls is 1 : 1. As such, the answer would be 1.00
+
+Solution credits:
+0. https://github.com/joric/interviewbit/blob/master/puzzles/ratio-of-boys-and-girls.md
+1. https://www.geeksforgeeks.org/puzzle-17-ratio-of-boys-and-girls-in-a-country-where-people-want-only-boys/
+2. https://brainly.in/question/23751859
+3. https://www.quora.com/Can-you-solve-this-In-a-country-where-everyone-wants-a-boy-each-family-continues-having-babies-until-they-have-a-boy-What-is-the-proportion-of-boys-to-girls-in-the-country-if-the-probability-of-having-a-boy-or-a

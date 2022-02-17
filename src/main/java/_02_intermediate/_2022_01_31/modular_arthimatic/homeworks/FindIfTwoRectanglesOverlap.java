@@ -50,4 +50,6 @@ G = 3   H = 3
 
 output : 1
 exp: overlapping rectangles can be found
+
+credits: https://github.com/black-shadows/InterviewBit-Topicwise-Solutions/blob/master/Math/Find%20if%20two%20rectangles%20overlap.cpp
  */
