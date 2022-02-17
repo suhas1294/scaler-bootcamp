@@ -1,0 +1,13 @@
+(a + b ) % m = ((a % m) + (b % m)) % m
+
+(a * b ) % m = ((a % m) * (b % m)) % m
+
+
+divisibility test for 3 : (sum of all digits of number) % 3 = 0
+
+divisibility test for 9 : (sum of all digits of number) % 9 = 0
+
+divisibility test for 4 : (sum of all digits of number) % 4 = 0
+
+
+

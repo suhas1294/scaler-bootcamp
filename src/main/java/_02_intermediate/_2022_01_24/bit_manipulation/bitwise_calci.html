@@ -28,6 +28,7 @@
 <p>a & b = <span class="and_result"></span></p>
 <p>a | b = <span class="or_result"></span></p>
 <p>a ^ b = <span class="xor_result"></span></p>
+<p>a mod b = <span class="mod_result"></span></p>
 </body>
 <script>
     function calculate() {
@@ -36,6 +37,7 @@
         document.querySelector("span.and_result").textContent = a & b;
         document.querySelector("span.or_result").textContent = a | b;
         document.querySelector("span.xor_result").textContent = a ^ b;
+        document.querySelector("span.mod_result").textContent = a % b;
     }
 </script>
 </html>
