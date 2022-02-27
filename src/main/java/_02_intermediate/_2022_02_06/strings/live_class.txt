@@ -1,0 +1,15 @@
+String definition
+ascii characters
+    A-Z : 65-90
+    a-z : 97-122
+    0-9 : 48-57
+
+
+1. Given a string (alphabet only), toggle the case of each charcters.
+2. given a lowercase alphabet string, sort it. - concept of count sort.
+3. given a string, reverse a given substring.
+4. Reverse the sentense . given a string which has spaces, reverse this sentense.
+    constraint: only 1 space b/w two words, no spaces in beginning and end.
+    dont use string and split and reverse loop and print.
+4.1 Reverse a sentence which has trailing and leading space.
+5. given a lower case string, find the longest palindromic substring length.

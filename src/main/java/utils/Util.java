@@ -58,4 +58,24 @@ public class Util {
     //        System.out.println(Arrays.toString(arr[i]));
     //    }
     //}
+
+    // find factors for a given number
+    public static ArrayList<Integer> findFactors(int num) {
+        ArrayList<Integer> factors = new ArrayList<Integer>();
+        int incrementer = num % 2 == 0 ? 1 : 2; // Skip two if the number is odd
+        for (int i = 1; i <= Math.sqrt(num); i += incrementer) {
+            // If there is no remainder, then the number is a factor.
+            if (num % i == 0) {
+                factors.add(i);
+                if (i != num / i) { // Skip duplicates
+                    factors.add(num / i);
+                }
+            }
+        }
+        return factors;
+    }
+
+    public static int getFactorsCount(int num){
+        return findFactors(num).size();
+    }
 }
