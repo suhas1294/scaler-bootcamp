@@ -5,5 +5,7 @@ src/main/java/_02_intermediate/_2022_02_06/strings/assignments/LongestPalindromi
 src/main/java/_02_intermediate/_2022_02_06/strings/homework/ChangeCharacter.java
 src/main/java/_02_intermediate/_2022_02_09/hashmap/assignments/LongestSubArrayWithSumZero.java
 src/main/java/_02_intermediate/_2022_02_09/hashmap/live_session/_04_SubArrayWithSumZero.java
-
+src/main/java/_02_intermediate/_2022_02_09/hashmap/homework/ColorfulNumber.java
+src/main/java/_02_intermediate/_2022_02_28/trees/assignments/FindTreeHeight.java
+src/main/java/_02_intermediate/_2022_02_11/assignments/SubArrayWithGivenSum.java
 
