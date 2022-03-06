@@ -1,4 +1,4 @@
-package _02_intermediate._2022_02_11.assignments;
+package _02_intermediate._2022_02_11.hashmap.assignments;
 
 public class SubArrayWithGivenSum {
     // https://www.interviewbit.com/blog/subarray-with-given-sum/

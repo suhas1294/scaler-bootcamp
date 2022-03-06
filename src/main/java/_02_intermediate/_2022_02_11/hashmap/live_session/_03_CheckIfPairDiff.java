@@ -1,4 +1,4 @@
-package _02_intermediate._2022_02_11.live_session;
+package _02_intermediate._2022_02_11.hashmap.live_session;
 
 import java.util.HashSet;
 import java.util.Set;

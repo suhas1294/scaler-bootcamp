@@ -1,4 +1,4 @@
-package _02_intermediate._2022_02_11.homework;
+package _02_intermediate._2022_02_11.hashmap.homework;
 
 import java.util.HashSet;
 

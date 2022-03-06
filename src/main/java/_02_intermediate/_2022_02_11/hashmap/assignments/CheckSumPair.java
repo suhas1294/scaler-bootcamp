@@ -1,4 +1,4 @@
-package _02_intermediate._2022_02_11.assignments;
+package _02_intermediate._2022_02_11.hashmap.assignments;
 
 import java.util.*;
 
