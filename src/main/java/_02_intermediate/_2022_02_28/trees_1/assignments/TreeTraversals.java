@@ -1,19 +1,9 @@
-package _02_intermediate._2022_02_28.trees.assignments;
+package _02_intermediate._2022_02_28.trees_1.assignments;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TreeTraversals {
-    private class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val = x;
-            left=null;
-            right=null;
-        }
-    }
     public void inorderTraversal(TreeNode A, List<Integer> list) {
         if (A == null) return;
         inorderTraversal(A.left, list);
@@ -40,5 +30,16 @@ public class TreeTraversals {
             ans[i] = list.get(i);
         }
         return ans;
+    }
+
+    private class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) {
+            val = x;
+            left=null;
+            right=null;
+        }
     }
 }

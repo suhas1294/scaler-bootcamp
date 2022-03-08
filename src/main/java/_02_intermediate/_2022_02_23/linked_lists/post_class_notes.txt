@@ -1,0 +1,71 @@
+Encapsulation
+
+C++: https://www.softwaretestinghelp.com/encapsulation-in-cpp/
+
+Java: https://www.w3schools.com/java/java_encapsulation.asp
+
+Python: https://www.geeksforgeeks.org/encapsulation-in-python/
+
+
+
+Cheatsheets
+
+C++: https://www.codecademy.com/learn/learn-c-plus-plus/modules/learn-cpp-classes-and-objects/cheatsheet
+
+Java: https://www.codecademy.com/learn/learn-java/modules/java-access-encapsulation-and-static-methods/cheatsheet
+
+https://www.codecademy.com/learn/learn-java/modules/learn-java-inheritance-and-polymorphism/cheatsheet
+
+Python: https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-classes/cheatsheet
+
+
+
+OOPS Interview Questions
+
+https://www.interviewbit.com/oops-interview-questions/
+
+
+
+Inheritance:
+
+C++: https://www.geeksforgeeks.org/inheritance-in-c/
+
+Python: https://docs.python.org/3/tutorial/classes.html#inheritance
+
+Java: https://www.geeksforgeeks.org/inheritance-in-java/
+
+
+
+Polymorphism:
+
+C++: https://www.geeksforgeeks.org/polymorphism-in-c/
+
+Java: https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html
+
+Python: https://www.programiz.com/python-programming/polymorphism
+
+
+
+
+
+C++
+
+Copy Constructor vs Assignment Operator: https://www.geeksforgeeks.org/copy-constructor-vs-assignment-operator-in-c/
+
+Emulating the super keyword: https://www.fluentcpp.com/2017/12/26/emulate-super-base/
+
+Friend functions: https://www.section.io/engineering-education/introduction-to-friend-functions-in-c++/
+
+
+
+Java
+
+Friend functions: https://stackoverflow.com/questions/14226228/implementation-of-friend-concept-in-java
+
+Interface: https://www.sanfoundry.com/java-program-make-shape-interface-implement-using-circle-rectangle-class/
+
+
+
+Design Problems
+
+Game of chess: https://inst.eecs.berkeley.edu/~cs162/sp07/Nachos/chess.shtml

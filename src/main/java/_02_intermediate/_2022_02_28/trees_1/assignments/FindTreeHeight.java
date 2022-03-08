@@ -1,17 +1,6 @@
-package _02_intermediate._2022_02_28.trees.assignments;
+package _02_intermediate._2022_02_28.trees_1.assignments;
 
 public class FindTreeHeight {
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-            left = null;
-            right = null;
-        }
-    }
 
     public static int solve(TreeNode A) {
         if (A == null) return -1;
@@ -28,6 +17,17 @@ public class FindTreeHeight {
         tn.left.left = new TreeNode(0);
         tn.left.right = new TreeNode(1);
         System.out.println(solve(tn));
+    }
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+            left = null;
+            right = null;
+        }
     }
 }
 

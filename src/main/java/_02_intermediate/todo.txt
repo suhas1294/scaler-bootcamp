@@ -11,8 +11,10 @@ src/main/java/_02_intermediate/_2022_02_11/assignments/SubArrayWithGivenSum.java
 src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/assignments/LittlePonnyAndSubsequence.java
 src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/assignments/SubArrayOr.java
 src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/homeworks/SumTheDifference.java
+src/main/java/_02_intermediate/_2022_02_28/trees_1/homework/CountNodesGrtThenAncestor.java
 
 Not yet understood:
 src/main/java/_02_intermediate/_2022_02_16/recursion_2/homeworks/GreyCode.java
 src/main/java/_02_intermediate/_2022_02_16/recursion_2/homeworks/KthSymbol.java
 src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/homeworks/OddEvenSubsequences.java
+src/main/java/_02_intermediate/_2022_03_02/tree_2/assignment/BSTNodesInRange.java

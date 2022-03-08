@@ -1,19 +1,9 @@
-package _02_intermediate._2022_02_28.trees.homework;
+package _02_intermediate._2022_02_28.trees_1.homework;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class NodesCount {
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val = x;
-            left=null;
-            right=null;
-        }
-    }
 
     public static int solve(TreeNode A) {
         List<Integer> list = new ArrayList<>();
@@ -26,6 +16,16 @@ public class NodesCount {
         inorderTraversal(A.left, list);
         list.add(A.val);
         inorderTraversal(A.right, list);
+    }
+    private static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) {
+            val = x;
+            left=null;
+            right=null;
+        }
     }
 }
 
