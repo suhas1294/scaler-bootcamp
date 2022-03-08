@@ -1,4 +1,4 @@
-package _02_intermediate._2022_03_02.tree_2.assignment.homework;
+package _02_intermediate._2022_03_02.tree_2.homework;
 
 public class InvertBinaryTree {
     public static TreeNode invertTree(TreeNode A) {
