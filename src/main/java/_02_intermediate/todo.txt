@@ -1,4 +1,3 @@
-src/main/java/_02_intermediate/_2022_01_26/bit_manipulation/homework/SubArrayWithBitwiseOR1.java
 src/main/java/_02_intermediate/_2022_01_31/modular_arthimatic/homeworks/RepeatingAndMissingNumberArray.java
 src/main/java/_02_intermediate/_2022_02_04/sorting/homework/LargestNumber.java
 src/main/java/_02_intermediate/_2022_02_06/strings/assignments/LongestPalindromicSubstring.java

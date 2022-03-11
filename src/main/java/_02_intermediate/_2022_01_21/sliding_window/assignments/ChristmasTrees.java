@@ -52,7 +52,11 @@ public class ChristmasTrees {
 
 /*
 soln credits: https://www.geeksforgeeks.org/minimum-cost-of-choosing-3-increasing-elements-in-an-array-of-size-n/
-You are given an array A consisting of heights of Christmas trees, and an array B of same size consisting of the cost of each of the trees (Bi is the cost of tree Ai, where 1 ≤ i ≤ size(A)), and you are supposed to choose 3 trees (let's say, indices p, q and r), such that Ap < Aq < Ar, where p < q < r.
+
+You are given an array A consisting of heights of Christmas trees, and an array B of same size consisting of
+the cost of each of the trees (Bi is the cost of tree Ai, where 1 ≤ i ≤ size(A)), and you are supposed to
+choose 3 trees (let's say, indices p, q and r), such that Ap < Aq < Ar, where p < q < r.
+
 The cost of these trees is Bp + Bq + Br.
 You are to choose 3 such trees, so they have the minimum cost and find the minimum cost.
 If not possible to choose 3 such trees, return -1.

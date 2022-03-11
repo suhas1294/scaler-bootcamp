@@ -1,9 +1,29 @@
 package _02_intermediate._2022_01_26.bit_manipulation.homework;
 
-import java.util.Arrays;
-
-// TLE error
 public class SubArrayWithBitwiseOR1 {
+    // effecient soln, for explanation refer feb 27th notes.
+    // order of understanding solution:
+    // 1. _02_intermediate._2022_02_27.problem_solving._01_SubArrayWithORZero.subArrayWithOrZero
+    // 2. _02_intermediate._2022_01_26.bit_manipulation.homework.SubArrayWithBitwiseOR1.subArrayWithOrOne1
+    // 3. _02_intermediate._2022_02_27.problem_solving._02_SubArraysWithZerothBitOne.subArraysWithZerothBitOne
+    // 4. _02_intermediate._2022_02_27.problem_solving._02_SubArraysWithZerothBitOne.subArraysWithNthBitOne
+    public static long subArrayWithOrOne1(int[] arr){
+        int n = arr.length;
+        long ans = 0, cnt = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == 0){
+                cnt += 1;
+            }else{
+                ans = ans + ( (cnt * (cnt + 1))/2 );
+                cnt = 0;
+            }
+        }
+        ans = ans + ( (cnt * (cnt + 1))/2 );
+        return ((long) n * (n +1)/2) - ans;
+    }
+
+
+    // TLE error
     public static long solve(int A, int[] B) {
         long cnt = 0;
         for (int start = 0; start < A; start++) {

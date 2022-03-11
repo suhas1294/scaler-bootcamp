@@ -1,6 +1,18 @@
 package _02_intermediate._2022_02_16.recursion_2.homeworks;
 
 public class KthSymbol {
+    // refer feb 27th notes for explanation
+    public static int find(int n, int k){
+        if (k == 0) return 0;
+        int parentIdx = k/2;
+        int parentValue = find(n-1, parentIdx);
+        if (k % 2 == 0){
+            return parentValue;
+        }else{ // ans will be inverse of parent data
+            return 1-parentValue;
+        }
+    }
+
     public static int kthGrammar(int n, int k) {
         if(n == 1 && k==1) return 0;
         int mid = (int)Math.pow(2,n-1)/2;

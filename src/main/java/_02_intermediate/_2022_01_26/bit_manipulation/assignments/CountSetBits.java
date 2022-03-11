@@ -1,5 +1,7 @@
 package _02_intermediate._2022_01_26.bit_manipulation.assignments;
 
+// refer notes from feb 27th, last page.
+// how many set bits are there, that much +1 operations we need to make.
 public class CountSetBits {
     // check how many bits are set
     public static int solve(int A) {

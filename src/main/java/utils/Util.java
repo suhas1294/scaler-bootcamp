@@ -78,4 +78,8 @@ public class Util {
     public static int getFactorsCount(int num){
         return findFactors(num).size();
     }
+
+    public static boolean checkBit(int num, int i){
+        return (((num >> i) & 1) == 1);
+    }
 }
