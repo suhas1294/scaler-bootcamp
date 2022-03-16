@@ -1,0 +1,66 @@
+// write your code here...
+/*
+Given an array, for each element find the value of the nearest element to the right which is having a
+frequency greater than as that of the current element. If there does not exist an answer for a position,
+then make the value ‘-1’.
+
+Examples:
+                                    |
+Input : a[] = [1,   1, 2, 3, 4, 2,  1]
+
+
+//Output :    [-1, -1, 1, 2, 2, 1, -1]
+
+1 -> 3
+2 -> 2
+3 -> 1
+4 -> 1
+
+Stack = [0 ,1, 6 ]
+result=[-1,-1, 1,  2 , 2,1,-1]
+
+[     1  2,2 1]
+set = {}
+set = {1}
+
+*/
+
+0 1 2 3 4 5 6 7 8 9
+1,2,2,3,3,3,4,4,4,4
+
+1-1
+2-3
+3-3
+4-4
+
+stack = {2}
+result = {2, -1, 3}
+
+public static int[] solve(int[] arr){
+    if(arr.length == 0 || arr.length == 1) return new int[]{-1};
+    Map<Integer, Integer> map = new HashMap<>();
+    for(int i =0; i < arr.length; i++){
+        if(map.contains(arr[i]){
+            int curFreq = map.get(arr[i]);
+            map.put(arr[i], curFreq+1);
+        }else{
+            map.put(arr[i],1 );
+        }
+    }
+    Stack<Intger> stack = new Stack<>();
+    stack.push(0);
+    int[] result = new int[arr.length];
+    for(int i = 1, i < arr.length; i++){
+        while(!stack.isEmpty()){
+            int numIdx = stack.pop();
+            if(map.get(arr[numIdx]) < map.get(arr[i])){
+                    result[numIdx] = arr[i];
+            }
+        }
+        stack.push(i);
+    }
+    while(!stack.isEmpty){
+        result[stack.pop()] = -1;
+    }
+    return result;
+}

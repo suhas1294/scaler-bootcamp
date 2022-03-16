@@ -1,0 +1,17 @@
+1. not albe to locate the name - name is not highlightened.
+2. name first, profile name next
+3. 5 plus yrs exp (not just 5)
+4. lot of space waste.
+5. exp -> work exp
+
+programming languages :
+tools & frameworks / technologies : mysql, redis, kafka
+area of interest : comptative programming / ds & algo, system design(hld/lld), distributed system
+
+break down large points in description.
+
+come up with stories - ex: how i achieeved scaling, increase through put ?
+quantification - latency, throughput.
+
+
+awards & recogniation
