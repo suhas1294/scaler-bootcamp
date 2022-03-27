@@ -34,6 +34,15 @@ public class Util {
         }
     }
 
+    public static void print2DMatrix(int[][] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                System.out.print(arr[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+
     public static void find3SmallestnoInArray(ArrayList<Integer> B){
         int least = Integer.MAX_VALUE, secLeast = Integer.MAX_VALUE, thirdLeast = Integer.MAX_VALUE;
         for (int i = 0; i < B.size(); i++) {
@@ -81,5 +90,48 @@ public class Util {
 
     public static boolean checkBit(int num, int i){
         return (((num >> i) & 1) == 1);
+    }
+
+    public static int[][] get2dCopy(int[][] mat){
+        return Arrays.stream(mat).map(int[]::clone).toArray(int[][]::new);
+    }
+
+    // this method will NOT mutate the original matrix
+    public static int[][] prefixSumMatrix(int[][] mat){
+        int[][] arr = get2dCopy(mat);
+        int n = arr.length;
+        int m = arr[0].length;
+        // adding each columns
+        for (int row = 0; row < n; row++) {
+            for (int column = 1; column < m; column++) {
+                arr[row][column] = arr[row][column-1] + arr[row][column];
+            }
+        }
+        // adding each column
+        for (int column = 0; column < m; column++) {
+            for (int row = 1; row < n; row++) {
+                arr[row][column] = arr[row-1][column] + arr[row][column];
+            }
+        }
+        return arr;
+    }
+
+    // this method WILL mutate the original matrix
+    public static int[][] prefixSumMatrixMutate(int[][] arr){
+        int n = arr.length;
+        int m = arr[0].length;
+        // adding each columns
+        for (int row = 0; row < n; row++) {
+            for (int column = 1; column < m; column++) {
+                arr[row][column] = arr[row][column-1] + arr[row][column];
+            }
+        }
+        // adding each column
+        for (int column = 0; column < m; column++) {
+            for (int row = 1; row < n; row++) {
+                arr[row][column] = arr[row-1][column] + arr[row][column];
+            }
+        }
+        return arr;
     }
 }

@@ -11,6 +11,7 @@ src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/assignments/Little
 src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/assignments/SubArrayOr.java
 src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/homeworks/SumTheDifference.java
 src/main/java/_02_intermediate/_2022_02_28/trees_1/homework/CountNodesGrtThenAncestor.java
+src/main/java/_03_advance/_2022_03_16/arrays_2/assignments/MaximumSumSquareSubmatrix.java
 
 Not yet understood:
 src/main/java/_02_intermediate/_2022_02_16/recursion_2/homeworks/GreyCode.java
