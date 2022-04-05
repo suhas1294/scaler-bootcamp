@@ -18,3 +18,4 @@ src/main/java/_02_intermediate/_2022_02_16/recursion_2/homeworks/GreyCode.java
 src/main/java/_02_intermediate/_2022_02_16/recursion_2/homeworks/KthSymbol.java
 src/main/java/_02_intermediate/_2022_02_18/subset_subsequence/homeworks/OddEvenSubsequences.java
 src/main/java/_02_intermediate/_2022_03_02/tree_2/assignment/BSTNodesInRange.java
+src/main/java/_03_advance/_2022_03_21/arrays_3/assignments/MaximumAbsoluteDifference.java
