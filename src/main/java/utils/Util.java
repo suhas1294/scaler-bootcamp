@@ -116,8 +116,9 @@ public class Util {
         return arr;
     }
 
-    // this method WILL mutate the original matrix
-    public static int[][] prefixSumMatrixMutate(int[][] arr){
+    // this method WILL NOT mutate the original matrix
+    public static int[][] prefixSumMatrixMutate(int[][] mat){
+        int[][] arr = new int[mat.length][mat[0].length];
         int n = arr.length;
         int m = arr[0].length;
         // adding each columns
