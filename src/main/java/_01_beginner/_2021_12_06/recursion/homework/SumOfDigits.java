@@ -17,3 +17,14 @@ public class SumOfDigits {
         return (n % 10) + sumOfDigits(n/10);
     }
 }
+
+/*
+Given a number A, we need to find the sum of its digits using recursion.
+1 <= A <= 10^9
+Input Format : The first and only argument is an integer A.
+Output Format : Return an integer denoting the sum of digits of the number A.
+
+Input 1: A = 46, Output 1:10, Explanation 1: Sum of digits of 46 = 4 + 6 = 10
+Input 2: A = 11, Output 2:2, Explanation 2: Sum of digits of 11 = 1 + 1 = 2
+
+ */

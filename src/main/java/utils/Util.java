@@ -135,4 +135,21 @@ public class Util {
         }
         return arr;
     }
+
+    public static int factorial(int N){
+        if (N == 1) return 1;
+        return (N * factorial(N-1));
+    }
+
+    // following function calculates power in LogN base 2 time
+    public static long pow(int a, int n){
+        if (n == 0) return 1;
+        long he = pow(a, n/2);
+        long ha = he * he;
+        if ((n % 2) == 0){
+            return ha;
+        }else{
+            return ha * a;
+        }
+    }
 }

@@ -15,6 +15,7 @@ public class PowModP {
 
     // constraint : -10^9 < A < 10^9
     // Note : In Java, negative num % p will not give expected result, add p if mod result is -ve
+    // power function
     static int pow(int A, int B, int C){
         if (B == 0) return 1 % C;
         long he = pow(A, B/2, C);

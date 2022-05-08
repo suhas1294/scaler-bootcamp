@@ -1,6 +1,8 @@
 package _01_beginner._2021_12_03.homework;
 
 // Refer Euclidean theorem here for optimized solution explaination : https://www.idomaths.com/hcflcm.php
+// refer src/main/java/_03_advance/_2022_03_30/GCD/live_session/_01_EuclideanGCD.java
+// and also the corresponding notes on march 30th 2022.
 
 public class GcdOfTwoNumbersOptimized {
     public static void main(String[] args) {
