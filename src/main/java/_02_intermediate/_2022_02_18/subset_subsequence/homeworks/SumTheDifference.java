@@ -1,8 +1,18 @@
 package _02_intermediate._2022_02_18.subset_subsequence.homeworks;
 
+import java.util.Arrays;
+
+// TC: n Log n
 public class SumTheDifference {
     public static int solve(int[] A) {
-        return -1;
+        Arrays.sort(A);
+        long mod = 1000000007;
+        long maxSum = 0, minSum = 0, n = A.length;
+        for (int i = 0;i < n;i++){
+            maxSum += A[i] * (Math.pow(2, (i % mod)) % mod);
+            minSum += A[i] * (Math.pow(2, ((n - 1) - i) % mod) % mod);
+        }
+        return (int)((maxSum - minSum) % mod);
     }
 }
 
