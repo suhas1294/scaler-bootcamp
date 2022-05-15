@@ -1,4 +1,4 @@
-package _03_advance._2022_04_20.binary_search.assignments;
+package _03_advance._2022_04_20.binary_search_1.assignments;
 
 public class SortedInsertionPosition {
     public static int searchInsert(int[] A, int B) {

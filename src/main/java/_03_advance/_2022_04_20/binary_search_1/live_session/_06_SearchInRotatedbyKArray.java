@@ -1,4 +1,4 @@
-package _03_advance._2022_04_20.binary_search.live_session;
+package _03_advance._2022_04_20.binary_search_1.live_session;
 
 // TC : logn
 public class _06_SearchInRotatedbyKArray {

@@ -1,4 +1,4 @@
-package _03_advance._2022_04_20.binary_search.live_session;
+package _03_advance._2022_04_20.binary_search_1.live_session;
 
 // TC : log n + log m
 public class _05_SearchForElementeSortedMatrix {
@@ -33,7 +33,7 @@ public class _05_SearchForElementeSortedMatrix {
         }
         return ans;
     }
-    
+
     public static void main(String[] args) {
         //System.out.println(searchInMatrix(new int[][]{{1}}, 1));
         System.out.println(searchInMatrix(new int[][]{

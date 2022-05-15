@@ -1,4 +1,4 @@
-package _03_advance._2022_04_20.binary_search.live_session;
+package _03_advance._2022_04_20.binary_search_1.live_session;
 
 public class _04_FindFirstOccurenceIdxOfk {
     public static int getFirstOccurence(int a[], int k){

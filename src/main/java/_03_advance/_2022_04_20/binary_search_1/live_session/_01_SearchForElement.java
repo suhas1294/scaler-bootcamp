@@ -1,4 +1,4 @@
-package _03_advance._2022_04_20.binary_search.live_session;
+package _03_advance._2022_04_20.binary_search_1.live_session;
 
 // Binary search algorithm, TC: O(n), sc: O(1)
 public class _01_SearchForElement {
