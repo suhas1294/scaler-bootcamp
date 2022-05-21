@@ -1,5 +1,15 @@
+Not Done :
+    src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/ThreeSumZero.java
+
+
 Not understood :
-src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/CyclicPermutations.java
-src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/PermutationOfAInB.java
-src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/SpecialInteger.java
-src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/AthMagicNumber.java
+    src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/CyclicPermutations.java
+    src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/PermutationOfAInB.java
+    src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/SpecialInteger.java
+    src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/AthMagicNumber.java
+
+    two pointers related
+        src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/SubArrayWithGivenSum.java
+        src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/CountOfPairsWithGivenSum.java
+        src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/PairWithGivenDiff.java
+        src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/PairWithGivenSumRepeatedElements.java
