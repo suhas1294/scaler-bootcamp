@@ -4,6 +4,22 @@ import java.util.*;
 
 // if there is a repetetion in prefix sum array, then it means there is a subarray with sum 0
 public class _04_SubArrayWithSumZero {
+
+    public static int solve3(int[] A){
+        Map<Long, Integer> map = new HashMap<>(); // This can be a set also.
+        long pref = 0;
+        map.put(0L, 0);
+        for (int i = 0; i < A.length; i++) {
+            pref = pref + (A[i]);
+            if (map.containsKey(pref)) {
+                return 1;
+            } else {
+                map.put(pref, i);
+            }
+        }
+        return 0;
+    }
+
     public static boolean solve(int[] A){
         // step-1: construct prefix array
         int[] pf = new int[A.length];
@@ -33,7 +49,6 @@ public class _04_SubArrayWithSumZero {
         }
         return ((set.size() < A.length) || set.contains(0)) ? 1 : 0; // edge case : -1, 4, -3, 2
     }
-
 
     public static void main(String[] args) {
         //System.out.println(solve(new int[]{2,2,1,-3,4,3,1,-2,-3,2}));

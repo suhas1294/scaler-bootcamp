@@ -13,3 +13,8 @@ Not understood :
         src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/CountOfPairsWithGivenSum.java
         src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/PairWithGivenDiff.java
         src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/PairWithGivenSumRepeatedElements.java
+
+    hashing:
+        src/main/java/_03_advance/_2022_05_02/hashing_1/assignments/LargestContinuousSequenceZeroSum.java
+        src/main/java/_03_advance/_2022_05_04/hashing_2/assignments/ReplicatingSubString.java
+        src/main/java/_03_advance/_2022_05_04/hashing_2/assignments/Unique2dPoints.java
