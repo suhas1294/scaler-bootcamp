@@ -1,12 +1,13 @@
 Not Done :
     src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/ThreeSumZero.java
-
-
+    src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/AtoI.java
+    src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/SameFormatString.java
+    src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/FamilyOfStrings.java
+    
 Not understood :
-    src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/CyclicPermutations.java
-    src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/PermutationOfAInB.java
-    src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/SpecialInteger.java
-    src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/AthMagicNumber.java
+    binary search
+        src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/SpecialInteger.java
+        src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/AthMagicNumber.java
 
     two pointers related
         src/main/java/_03_advance/_2022_04_29/two_pointers/assignments/SubArrayWithGivenSum.java
@@ -18,3 +19,9 @@ Not understood :
         src/main/java/_03_advance/_2022_05_02/hashing_1/assignments/LargestContinuousSequenceZeroSum.java
         src/main/java/_03_advance/_2022_05_04/hashing_2/assignments/ReplicatingSubString.java
         src/main/java/_03_advance/_2022_05_04/hashing_2/assignments/Unique2dPoints.java
+
+    String pattern:
+        src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/CyclicPermutations.java
+        src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/PermutationOfAInB.java
+        src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/BoringSubstring.java
+        src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/HiddenPattern.java
