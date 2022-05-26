@@ -3,7 +3,7 @@ Not Done :
     src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/AtoI.java
     src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/SameFormatString.java
     src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/FamilyOfStrings.java
-    
+
 Not understood :
     binary search
         src/main/java/_03_advance/_2022_04_22/binary_search_2/assignments/SpecialInteger.java
@@ -25,3 +25,7 @@ Not understood :
         src/main/java/_03_advance/_2022_05_09/string_pattern/assignments/PermutationOfAInB.java
         src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/BoringSubstring.java
         src/main/java/_03_advance/_2022_05_11/string_pattern_2/assignments/HiddenPattern.java
+
+    linkedlists
+        src/main/java/_03_advance/_2022_05_13/linked_lists_1/assignment/ReverseLinkedListFromAtoB.java
+        src/main/java/_03_advance/_2022_05_13/linked_lists_1/assignment/ReverseLinkedlistInKGroups.java
