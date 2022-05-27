@@ -1,6 +1,6 @@
 package _03_advance._2022_05_13.linked_lists_1.assignment;
 
-import static _03_advance._2022_05_13.linked_lists_1.assignment.MiddleOfLinkedList.ListNode;
+import _03_advance._2022_05_13.linked_lists_1.ListNode;
 
 public class ReverseLinkedlist {
     public ListNode reverseList(ListNode A) {

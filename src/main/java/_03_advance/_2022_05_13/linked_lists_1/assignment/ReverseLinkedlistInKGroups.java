@@ -1,10 +1,30 @@
 package _03_advance._2022_05_13.linked_lists_1.assignment;
 
-import static _03_advance._2022_05_13.linked_lists_1.assignment.MiddleOfLinkedList.ListNode;
+import _03_advance._2022_05_13.linked_lists_1.ListNode;
 
 public class ReverseLinkedlistInKGroups {
-    // recursive solution
-    public ListNode reverseListRecursive(ListNode A, int B) {
+
+    // code as per live session
+    public ListNode reverseListRecursive(ListNode head, int k) {
+        if (head == null ) return head;
+        ListNode h1 = head, h3 = head, tmp = head;
+        ListNode h2 = null;
+        int tk = k;
+        // inside while loop its same logic as Reverse first k elements of an linkedlist
+        // refer _03_advance._2022_05_13.linked_lists_1.live_session.ReverseFirstKNodesInLL.reverseFirstK()
+        while (k > 0 && h1 != null){
+            tmp = h1;
+            h1 = h1.next;
+            tmp.next = h2;
+            h2 = tmp;
+            k--;
+        }
+        h3.next = reverseListRecursive(h1, tk);
+        return h2;
+    }
+
+        // recursive solution
+    public ListNode reverseListRecursive2(ListNode A, int B) {
         if (A == null) {
             return null;
         }

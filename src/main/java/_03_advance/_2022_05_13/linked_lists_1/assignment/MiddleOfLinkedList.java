@@ -1,17 +1,25 @@
 package _03_advance._2022_05_13.linked_lists_1.assignment;
 
+import _03_advance._2022_05_13.linked_lists_1.ListNode;
+
 public class MiddleOfLinkedList {
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-        ListNode(int x) { val = x; next = null; }
+    // efficient solution using slow and fast pointers
+    // it will take single iteration unlike other solutions.
+    public static ListNode getMiddle(ListNode head) {
+        if (head == null) return head;
+        ListNode slow = head, fast = head;
+        while (fast.next != null && fast.next.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
     }
 
-    public static int getMiddle(ListNode A) {
+    public static int getMiddle1(ListNode A) {
         int length = 0;
         if (A.next == null) return A.val;
         ListNode tmp = A;
-        while (tmp.next != null){
+        while (tmp.next != null) {
             length++;
             tmp = tmp.next;
         }
@@ -20,7 +28,7 @@ public class MiddleOfLinkedList {
         //System.out.println("length: " + length);
         int jumpCounter = 0;
         tmp = A;
-        while (jumpCounter < length/2){
+        while (jumpCounter < length / 2) {
             tmp = tmp.next;
             jumpCounter++;
         }
@@ -31,7 +39,7 @@ public class MiddleOfLinkedList {
         int length = 0;
         if (A.next == null) return null;
         ListNode tmp = A;
-        while (tmp.next != null){
+        while (tmp.next != null) {
             length++;
             tmp = tmp.next;
         }
@@ -40,7 +48,7 @@ public class MiddleOfLinkedList {
         //System.out.println("length: " + length);
         int jumpCounter = 1;
         tmp = A;
-        while (jumpCounter < length/2){
+        while (jumpCounter < length / 2) {
             tmp = tmp.next;
             jumpCounter++;
         }
@@ -59,6 +67,7 @@ public class MiddleOfLinkedList {
 
         System.out.println(deleteMiddle(head));
     }
+
 }
 
 /*

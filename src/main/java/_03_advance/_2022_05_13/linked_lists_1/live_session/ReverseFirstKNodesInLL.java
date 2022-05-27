@@ -1,6 +1,6 @@
 package _03_advance._2022_05_13.linked_lists_1.live_session;
 
-import static _03_advance._2022_05_13.linked_lists_1.assignment.MiddleOfLinkedList.ListNode;
+import _03_advance._2022_05_13.linked_lists_1.ListNode;
 
 public class ReverseFirstKNodesInLL {
     // this program is a slight modification of function :
