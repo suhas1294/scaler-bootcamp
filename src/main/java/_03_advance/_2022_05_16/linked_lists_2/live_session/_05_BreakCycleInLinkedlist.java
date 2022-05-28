@@ -10,7 +10,7 @@ public class _05_BreakCycleInLinkedlist {
             slow = slow.next;
             fast = fast.next.next;
             if (slow == fast) { // there is a cycle
-                while (tmp.next != slow.next){
+                while (tmp.next != slow.next) {
                     slow = slow.next;
                     tmp = tmp.next;
                 }
@@ -21,10 +21,28 @@ public class _05_BreakCycleInLinkedlist {
         return A;
     }
 
+    public static ListNode removeLoopInLinkedlist3(ListNode A) {
+        ListNode slow = A, fast = A;
+
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) break;
+        }
+
+        slow = A;
+        while (slow.next != fast.next) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        fast.next = null;
+        return A;
+    }
+
     public static ListNode removeLoopInLinkedlist2(ListNode head) {
         if (head == null || head.next == null) return null;
         ListNode slow = head, fast = head;
-        while (fast.next != null && fast.next.next != null){
+        while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
             if (slow.equals(fast)) { // there is head cycle
@@ -36,7 +54,7 @@ public class _05_BreakCycleInLinkedlist {
                     }
                     fast.next = null; // remove loop
                 } else { // if given linkedlist is perfect circle
-                    while(fast.next != slow) {
+                    while (fast.next != slow) {
                         fast = fast.next;
                     }
                     fast.next = null;
@@ -44,6 +62,19 @@ public class _05_BreakCycleInLinkedlist {
             }
         }
         return head;
+    }
+
+    public static void main(String[] args) {
+        ListNode listNode = new ListNode(1);
+        ListNode tmp = listNode;
+
+        listNode.next = new ListNode(2);
+        listNode.next.next = new ListNode(3);
+        listNode.next.next.next = new ListNode(4);
+        listNode.next.next.next.next = new ListNode(5);
+        listNode.next.next.next.next.next = tmp.next;
+
+        System.out.println(removeLoopInLinkedlist3(tmp).val);
     }
 }
 
