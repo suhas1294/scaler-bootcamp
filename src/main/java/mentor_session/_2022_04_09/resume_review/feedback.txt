@@ -1,0 +1,14 @@
+hld and lld in capital, system desgin.
+it should be distributed systems.
+instead of competative programming - make it data structures and algorithms
+remove highlighting for unnecessary - micro app, migrating.
+
+designing the system architecture of  ? .... ?
+quantification - TPS, QPS - how many customers onboarded , how u reduced latency , decrease api response time.
+buisness benefit , bring down the cost by x%, cost effectivenes., customer satisfaction.
+payment related metrics.
+
+transaction time reduced by how much ?
+accomlishments -> awards and recognition.
+add one more accomplishment.
+right alignment the duration
