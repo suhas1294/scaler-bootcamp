@@ -77,4 +77,9 @@ pre-order : 1 2 4 5 3 6 7
 post-order : 1 3 7 6 2 5 4
 level : 1 2 3 4 5 6 7
 
+BFS = LevelOrder = Queue
+DFS= PRe, Inorder, Posrorder = Iterative, Recursion
+
+NLR,LNR, LRN
+
  */
