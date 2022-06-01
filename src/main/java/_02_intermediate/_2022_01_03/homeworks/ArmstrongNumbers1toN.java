@@ -2,6 +2,7 @@ package _02_intermediate._2022_01_03.homeworks;
 
 import java.util.Scanner;
 
+// Armstrong number is a number that is equal to the sum of cubes of its digits
 public class ArmstrongNumbers1toN {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
