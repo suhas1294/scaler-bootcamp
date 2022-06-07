@@ -2,11 +2,11 @@ package _02_intermediate._2022_02_28.trees_1.assignments;
 
 public class FindTreeHeight {
 
-    public static int solve(TreeNode A) {
-        if (A == null) return -1;
-        System.out.println("current node : " + A.val);
-        int leftSubtreeHeight = solve(A.left);
-        int rightSubtreeHeight = solve(A.right);
+    public static int heightOfTree(TreeNode root) {
+        if (root == null) return -1;
+        System.out.println("current node : " + root.val);
+        int leftSubtreeHeight = heightOfTree(root.left);
+        int rightSubtreeHeight = heightOfTree(root.right);
         return (Math.max(leftSubtreeHeight, rightSubtreeHeight) + 1);
     }
 
@@ -16,7 +16,7 @@ public class FindTreeHeight {
         tn.right = new TreeNode(0);
         tn.left.left = new TreeNode(0);
         tn.left.right = new TreeNode(1);
-        System.out.println(solve(tn));
+        System.out.println(heightOfTree(tn));
     }
     static class TreeNode {
         int val;

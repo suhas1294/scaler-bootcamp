@@ -15,13 +15,13 @@ public class RotateGame {
         }
         int rotateBy = scanner.nextInt();
         //int[] arr = {1, 2 , 3, 4}; int rotateBy = 2;
-        rotateStringByK(arr, rotateBy);
+        rotateArrayByK(arr, rotateBy);
         System.out.println(Arrays.toString(arr));
         for (int i = 0; i < arr_len; i++) {
             System.out.print(arr[i] + " ");
         }
     }
-    static void rotateStringByK(int[] arr, int k){
+    static void rotateArrayByK(int[] arr, int k){
         if (k > arr.length) k = k % arr.length;
         reverse(arr, 0, arr.length-1);
         reverse(arr, 0, k-1);
@@ -31,7 +31,6 @@ public class RotateGame {
     static void reverse(int[] arr, int start, int end){
         for (int i = start, j = end; i < j; i++, j--) {
             Util.swapIndicesOfanArray(arr, i, j);
-
         }
     }
 }
