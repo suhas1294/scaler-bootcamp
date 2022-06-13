@@ -11,6 +11,6 @@ public class _01_SetXUnsetYbits {
     }
 }
 
-// given x and y, set x continuous buts and unset continuous y bits
+// given x and y, set x continuous bits and unset continuous y bits
 // ex:
 // x = 2, y = 3, output = 11000 i.e., 24

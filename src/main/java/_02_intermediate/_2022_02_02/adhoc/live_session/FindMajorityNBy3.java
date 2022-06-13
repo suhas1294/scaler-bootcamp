@@ -2,6 +2,7 @@ package _02_intermediate._2022_02_02.adhoc.live_session;
 
 import java.util.List;
 
+// given arr[n] find majority elements - majority element is the a[i] whose freq is > n/3 in array
 public class FindMajorityNBy3 {
     static int[] findMajority(int[] arr){
         int freq1 = 0, freq2 = 0;

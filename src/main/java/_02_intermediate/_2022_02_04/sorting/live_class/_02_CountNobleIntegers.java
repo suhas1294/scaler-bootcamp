@@ -33,7 +33,7 @@ public class _02_CountNobleIntegers {
 /*
     count number of noble integers in given array
     question can be of two types : arr has distinct integers and duplicate integers
-    arr[i] number is set ot be noble if
+    arr[i] number is said to be noble if
     arr[i] = no of elements < arr[i]
 
     ex: arr = [1, -5, 3, 5, -10, 4]

@@ -1,5 +1,6 @@
 package _02_intermediate._2022_02_09.hashmap.homework;
 
+// TODO : implementation
 public class ColorfulNumber {
     public static int colorful(int A) {
         return -1;

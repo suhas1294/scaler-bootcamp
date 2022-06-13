@@ -1,0 +1,12 @@
+1. level order traversal - left to right (all in single line)
+2. level order traversal - left to right (each level in new line)
+3. left view of a binary tree
+
+4. level order traversal - right to left (each level in new line)
+5. right view of a binary tree
+
+6. vertical level order traversal (top to bottom)
+7. top view
+8. bottom view
+9. diagonal view
+

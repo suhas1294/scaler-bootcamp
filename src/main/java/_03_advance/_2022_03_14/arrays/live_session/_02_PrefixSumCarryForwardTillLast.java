@@ -25,7 +25,7 @@ public class _02_PrefixSumCarryForwardTillLast {
 }
 
 /*
-given a array whose initilal values are 0 and queries, each query contains startIdx and value to be added,
+given a array whose initial values are 0 and queries, each query contains startIdx and value to be added,
 for each query, loop through array and add the value to corresponding index starting from startIdx.
 after all queries are run, return the result.
 (Prerequisite for 'beggar outside temple problem')

@@ -1,0 +1,6 @@
+contrust the binary tree
+    - can we construct a BT if we are given preorder and post order array
+    - given inorder and preorder, construct binary tree
+search in BST
+insertion in BST
+given a BT, check if it is a BST

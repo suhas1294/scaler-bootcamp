@@ -1,2 +1,2 @@
-// super script : ¹²³⁴⁵⁶⁷⁸⁹⁰
-// sub script : ₀₁₂₃₄₅₆₇₈₉
+// super script : ¹²³⁴⁵⁶⁷⁸⁹⁰ ⁿ
+// sub script : ₀₁₂₃₄₅₆₇₈₉ ₙ

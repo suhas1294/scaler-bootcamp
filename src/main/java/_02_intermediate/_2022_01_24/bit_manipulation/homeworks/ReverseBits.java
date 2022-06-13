@@ -1,4 +1,4 @@
-package _02_intermediate._2022_01_24.bit_manipulation.homework;
+package _02_intermediate._2022_01_24.bit_manipulation.homeworks;
 
 public class ReverseBits {
     public static long reverse(long a) {

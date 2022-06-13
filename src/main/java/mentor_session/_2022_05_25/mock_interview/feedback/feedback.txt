@@ -1,0 +1,10 @@
+Techdummies youtube channel
+
+Grokking the system design-: HLD and LLD
+educative.io
+
+https://www.youtube.com/watch?v=UzLMhqg3_Wc
+
+1. database, modelling - one to many etc etc.
+2. design patterns -
+3. normalization

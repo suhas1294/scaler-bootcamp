@@ -15,7 +15,6 @@ public class _04_PrefixSumMax {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(prefixMax(new int[]{1, -6, 3, 2, 8, 7})));
         System.out.println(Arrays.toString(prefixMax(new int[]{2,1,3,2,1,2,4,3,2,1,3,1})));
-
     }
 }
 /*
