@@ -2,30 +2,30 @@ package _03_advance._2022_04_22.binary_search_2.assignments;
 
 public class AthMagicNumber {
     public static int solve(int A, int B, int C) {
-        long lcm=(long) B*C/gcd(B,C);
-        long low=Math.min(B,C), high=(long) Math.min(B,C)*A, ans=2;
-        while(low<=high){
-            long mid=low+((high-low)/2);
-            long cntb=mid/B;
-            long cntc=mid/C;
-            long cntbc=mid/lcm;
+        long lcm = (long) B * C / gcd(B, C);
+        long low = Math.min(B, C), high = (long) Math.min(B, C) * A, ans = 2;
+        while (low <= high) {
+            long mid = low + ((high - low) / 2);
+            long cntb = mid / B;
+            long cntc = mid / C;
+            long cntbc = mid / lcm;
 
-            if(cntb + cntc - cntbc>=A){
-                ans=mid;
-                high=mid-1;
-            }else{
-                low=mid+1;
+            if (cntb + cntc - cntbc >= A) {
+                ans = mid;
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
-        return (int)(ans%1000000007);
+        return (int) (ans % 1000000007);
     }
 
-    static int gcd(int x, int y){
-        if(x==0){
+    static int gcd(int x, int y) {
+        if (x == 0) {
             return y;
         }
 
-        return gcd(y%x,x);
+        return gcd(y % x, x);
     }
 }
 

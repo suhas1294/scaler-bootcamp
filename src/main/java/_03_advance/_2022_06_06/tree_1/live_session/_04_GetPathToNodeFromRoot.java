@@ -1,41 +1,73 @@
 package _03_advance._2022_06_06.tree_1.live_session;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
+/*
+funda:
+1. if node.data = target, return true
+2. else search in while LST
+3. else search in while RST
+4. if the any of LST/RST is giving true, then path exists, so add current node to ans list
+ */
 public class _04_GetPathToNodeFromRoot {
 
+    // taught in class
+    ArrayList<Integer> ans = new ArrayList<>();
+    public int[] findPathFromRoot(TreeNode root, int target) {
+        check(root, target);
+        Collections.reverse(ans);
+        return ans.stream().mapToInt(i -> i).toArray();
+    }
+
+    boolean check(TreeNode root, int k){
+        if (root == null) return false;
+        if(root.val == k){
+            ans.add(root.val);
+            return true;
+        }
+        if(check(root.left, k) || check(root.right, k) ){
+            ans.add(root.val);
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    // external solutions
     ArrayList<Integer> arr = new ArrayList<Integer>();
-    public int[] getPath(TreeNode A, int B) {
-        boolean flag = true;
-        recursion(A, B);
+    public int[] getPath(TreeNode root, int target) {
+        recursion(root, target);
         return arr.stream().mapToInt(i -> i).toArray();
     }
-    public boolean recursion(TreeNode A, int B) {
-        if(A==null) return false;
-        arr.add(A.val);
-        if(A.val==B)return true;
-        if(recursion(A.left, B) || recursion(A.right, B)) return true;
-        arr.remove(arr.size()-1);
+
+    public boolean recursion(TreeNode root, int target) {
+        if (root == null) return false;
+        arr.add(root.val);
+        if (root.val == target) return true;
+        if (recursion(root.left, target) || recursion(root.right, target)) return true;
+        arr.remove(arr.size() - 1);
         return false;
     }
 
     // using stacks
     ArrayList<Integer> result = new ArrayList<>();
     Stack<Integer> stack = new Stack<>();
-    public List<Integer> getPath2(TreeNode A, int B) {
-        boolean flag = traverse(A,B);
-        while(!stack.empty()){
+
+    public List<Integer> getPath2(TreeNode root, int target) {
+        while (!stack.empty()) {
             result.add(stack.peek());
             stack.pop();
         }
         return result;
     }
-    public boolean traverse(TreeNode A, int B){
-        if(A == null) return false;
-        if(A.val == B || traverse(A.left,B) || traverse(A.right,B)){
-            stack.push(A.val);
+
+    public boolean traverse(TreeNode root, int target) {
+        if (root == null) return false;
+        if (root.val == target || traverse(root.left, target) || traverse(root.right, target)) {
+            stack.push(root.val);
             return true;
         }
         return false;
@@ -45,10 +77,11 @@ public class _04_GetPathToNodeFromRoot {
         int val;
         TreeNode left;
         TreeNode right;
+
         TreeNode(int x) {
             val = x;
-            left=null;
-            right=null;
+            left = null;
+            right = null;
         }
     }
 }

@@ -1,0 +1,7 @@
+1. inorder traversal - using recursion (prerequisite)
+2. inorder traversal - using iterative approach (in assignments folder)
+3. In the inorder traversal of a tree, what is the last node we print ?
+    ( ans : we print the right most node in the right sub tree, if there is no right sub tree, print root)
+4. Morris inorder traversal ( space complexity O(1))
+5. Given 2 values of Binary tree, find shortest path between them - to illustrate LCA (least common ancestor)
+6. LCA in BST
