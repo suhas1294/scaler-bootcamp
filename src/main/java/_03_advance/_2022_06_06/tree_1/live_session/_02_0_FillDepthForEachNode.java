@@ -1,7 +1,7 @@
 package _03_advance._2022_06_06.tree_1.live_session;
 
 // fill the depth for each node given a binary tree.
-public class _02_FillDepthForEachNode {
+public class _02_0_FillDepthForEachNode {
     public static void fillDepth(TreeNode root, int d){ // d is initial depth.
         if (root == null) return;
         root.depth = d;
