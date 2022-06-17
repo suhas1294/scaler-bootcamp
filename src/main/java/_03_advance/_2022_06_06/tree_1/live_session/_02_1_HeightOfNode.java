@@ -1,6 +1,9 @@
 package _03_advance._2022_06_06.tree_1.live_session;
 
 public class _02_1_HeightOfNode {
+
+    // also refer  : _03_advance._2022_06_15.tree_5.assignment.DiameterOfBinaryTree.height
+
     int findHeightUtil(TreeNode root, int x) {
         if (root == null) return -1; // Base Case
         int leftHeight = findHeightUtil(root.left, x);

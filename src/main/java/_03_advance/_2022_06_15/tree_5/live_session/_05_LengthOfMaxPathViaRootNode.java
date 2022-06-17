@@ -27,7 +27,6 @@ public class _05_LengthOfMaxPathViaRootNode {
         int val;
         TreeNode left;
         TreeNode right;
-        int depth;
 
         TreeNode(int x) {
             val = x;
