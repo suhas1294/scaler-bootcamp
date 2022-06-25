@@ -6,7 +6,7 @@ import java.util.Queue;
 
 // refer _03_advance._2022_06_08.tree_2.live_session._01_LevelOrderTraversal.levelOrderTraversalRightToLeft
 public class _03_RightViewOfBTree {
-    public static ArrayList<Integer> leftView2(TreeNode root) {
+    public static ArrayList<Integer> rightView(TreeNode root) {
         if (root == null) return null;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);

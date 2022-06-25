@@ -21,7 +21,6 @@ public class DiameterOfBinaryTree {
         int val;
         TreeNode left;
         TreeNode right;
-        int depth;
 
         TreeNode(int x) {
             val = x;

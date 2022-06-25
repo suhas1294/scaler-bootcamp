@@ -1,0 +1,16 @@
+1. iterative post order traversal of a binary tree
+2. given a node, get right most node of inorder in LST (already done in tree_5 session)
+3. Deletion of a node in binary search tree
+4. given a perfect binary tree, link the nodes side ways.
+    idea-1 : using level order traversal + queue
+    idea-2 : check code.
+5. find two swapped nodes of BST
+
+
+
+
+Note:
+
+A full binary tree has all it's nodes with either none or two children.
+A complete binary tree of height h could be one in which all nodes up to level h have two children.
+A perfect binary tree is a tree which is both full and complete.
