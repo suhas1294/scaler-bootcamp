@@ -33,3 +33,19 @@ Not understood :
     tries:
         src/main/java/_03_advance/_2022_06_27/trie_2/assignment/MaxXorSubarray.java
         src/main/java/_03_advance/_2022_06_27/trie_2/assignment/FlattenBinaryTreeToLinkedlist.java
+
+    heaps:
+        src/main/java/_03_advance/_2022_07_04/heaps_2/assignments/KPlacesApart.java
+        src/main/java/_03_advance/_2022_07_04/heaps_2/assignments/AthLargestElement.java
+        src/main/java/_03_advance/_2022_07_04/heaps_2/assignments/ProductOf3.java
+        src/main/java/_03_advance/_2022_07_04/heaps_2/assignments/MaxArraySumAfterBNegations.java
+
+    greedy algo:
+        src/main/java/_03_advance/_2022_07_08/greedy/assignments/DistributeCandy.java
+        src/main/java/_03_advance/_2022_07_08/greedy/assignments/FreeCars.java
+        src/main/java/_03_advance/_2022_07_08/greedy/assignments/AssignMiceToHoles.java
+
+    backtracking:
+        src/main/java/_03_advance/_2022_07_11/backtracking_1/assignments/Sixlets.java
+        src/main/java/_03_advance/_2022_07_11/backtracking_1/assignments/CombinationSum.java
+        src/main/java/_03_advance/_2022_07_11/backtracking_1/assignments/ReturnAllSubsets.java

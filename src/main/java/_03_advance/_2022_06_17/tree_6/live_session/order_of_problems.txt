@@ -11,6 +11,7 @@
 
 Note:
 
+complete binary tree vs full binary tree vs perfect binary tree
 A full binary tree has all it's nodes with either none or two children.
 A complete binary tree of height h could be one in which all nodes up to level h have two children.
 A perfect binary tree is a tree which is both full and complete.
