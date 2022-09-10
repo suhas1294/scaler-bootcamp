@@ -18,14 +18,6 @@ class GraphNode{
     }
 }
 
-class WeightedGraphNode extends GraphNode{
-    Map<GraphNode, Integer> weightMap;
-    public WeightedGraphNode(int value){
-        super(value);
-        this.weightMap = new HashMap<>();
-    }
-}
-
 class Result{
     boolean canBereachedFromGivenSource;
     int level;
